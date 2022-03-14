@@ -124,11 +124,17 @@ def getUserSpan(username, enableLink):
     else:
         icon = ''
     if enableLink:
-        return f'<span>{icon}<a href="{ulink}">{str(uinfo.span)}</a></span>'
+        if icon:
+            return f'<span>{icon}<a href="{ulink}">{str(uinfo.span)}</a></span>'
+        else:
+            return f'{icon}<a href="{ulink}">{str(uinfo.span)}</a>'
     else:
         if icon.endswith(' '):
             icon = icon[:-1]
-        return f'<span>{icon}{str(uinfo.span)}</span>'
+        if icon:
+            return f'<span>{icon}{str(uinfo.span)}</span>'
+        else:
+            return f'{icon}{str(uinfo.span)}'
 
 
 url = 'https://jag-icpc.org/?2021%2FTeams%2FList'

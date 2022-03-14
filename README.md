@@ -1,4 +1,4 @@
-# ICPC_Standing_Colorizer
+# ICPC Standing Colorizer
 
 - __Install Link: https://github.com/riantkb/icpc_standing_colorizer/raw/master/ICPC-Standings-Colorizer.user.js__
 

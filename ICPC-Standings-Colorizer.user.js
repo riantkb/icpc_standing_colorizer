@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         ICPC Japan Standings Colorizer
 // @namespace    https://github.com/riantkb/icpc_standing_colorizer
-// @version      0.2.0
+// @version      0.3.0
 // @description  ICPC Japan Standings Colorizer
 // @author       riantkb
 // @match        http://www.yamagula.ic.i.u-tokyo.ac.jp/icpc2021/standings.html
@@ -41,6 +41,49 @@ function convertFromRatingToSpan(rating) {
     }
 }
 
+function getColorCode(rating) {
+    if (rating <= 0) {
+        return "#000000";
+    }
+    else if (rating < 400) {
+        return "#808080";
+    }
+    else if (rating < 800) {
+        return "#804000";
+    }
+    else if (rating < 1200) {
+        return "#008000";
+    }
+    else if (rating < 1600) {
+        return "#00C0C0";
+    }
+    else if (rating < 2000) {
+        return "#0000FF";
+    }
+    else if (rating < 2400) {
+        return "#C0C000";
+    }
+    else if (rating < 2800) {
+        return "#FF8000";
+    }
+    else {
+        return "#FF0000";
+    }
+}
+
+
+function generateTopcoderLikeCircle(rating) {
+    if (rating >= 3600) {
+        return `<span style="display: inline-block; border-radius: 50%; border-style: solid; border-width: 1px; height: 12px; width: 12px; border-color: rgb(255, 215, 0); background: linear-gradient(to right, rgb(255, 215, 0), white, rgb(255, 215, 0));" data-toggle="tooltip" data-placement="top" title="${rating}"></span>`
+    }
+    if (rating >= 3200) {
+        return `<span style="display: inline-block; border-radius: 50%; border-style: solid; border-width: 1px; height: 12px; width: 12px; border-color: rgb(128, 128, 128); background: linear-gradient(to right, rgb(128, 128, 128), white, rgb(128, 128, 128));" data-toggle="tooltip" data-placement="top" title="${rating}"></span>`
+    }
+    var ccode = getColorCode(rating)
+    var fill_ratio = rating >= 3200 ? 100 : rating % 400 / 4
+    return `<span style="display: inline-block; border-radius: 50%; border-style: solid; border-width: 1px; height: 12px; width: 12px; border-color: ${ccode}; background: linear-gradient(to top, ${ccode} ${fill_ratio}%, rgba(0,0,0,0) ${fill_ratio}%);" data-toggle="tooltip" data-placement="top" title="${rating}"></span>`
+}
+
 
 function domestic() {
     // console.log("domestic");
@@ -62,8 +105,11 @@ function domestic() {
                 if (a == null) continue;
                 var tname = a.innerText.split("\n")[0];
                 if (tname in team_dic) {
-                    var team_rating = convertFromRatingToSpan(team_dic[tname]['team_rating'])
-                    a.innerHTML += ` (${team_rating})<br>${team_dic[tname]['members'].join(', ')}`;
+                    var h = a.innerHTML
+                    // var team_rating = convertFromRatingToSpan(team_dic[tname]['team_rating'])
+                    var circle = generateTopcoderLikeCircle(team_dic[tname]['team_rating'])
+                    h = h.replace(tname, `${circle} ${tname}<br><small><span>${team_dic[tname]['members'].join(', ')}</span></small>`)
+                    a.innerHTML = h
                 }
             }
             var univ_count = [];
@@ -151,6 +197,9 @@ function domestic() {
 
 function regional() {
     // console.log("regional");
+    // $(function () {
+    //     $('[data-toggle="tooltip"]').tooltip()
+    // })
     var lines = document.querySelectorAll("div.team-col.team-name > span");
     // if (lines.length == 0) {
     //     setTimeout(regional, 500);
@@ -163,8 +212,9 @@ function regional() {
                 var tname = e.innerText.split("\n")[0];
                 if (tname in team_dic) {
                     var h = e.innerHTML
-                    var team_rating = convertFromRatingToSpan(team_dic[tname]['team_rating'])
-                    h = h.replace(tname, `${tname} (${team_rating})<br><small><span>${team_dic[tname]['members'].join(', ')}</span></small>`)
+                    // var team_rating = convertFromRatingToSpan(team_dic[tname]['team_rating'])
+                    var circle = generateTopcoderLikeCircle(team_dic[tname]['team_rating'])
+                    h = h.replace(tname, `${circle} ${tname}<br><small><span>${team_dic[tname]['members'].join(', ')}</span></small>`)
                     e.innerHTML = h
                 }
             }
@@ -190,7 +240,6 @@ function regional() {
 function main() {
     // console.log("main");
     var url = window.location.href;
-
     if (url.match(new RegExp(/www.yamagula.ic.i.u-tokyo.ac.jp/)) != null) {
         domestic();
     }

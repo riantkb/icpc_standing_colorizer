@@ -155,15 +155,17 @@ for i in range(len(df)):
         ratings.append(getUserRate(username))
 
     team_rating = int(rating_utils.aggregateRatings(ratings))
-    rat = convertFromRatingToSpan(team_rating)
-    res_df.loc[res_df.index[i], 'チームレート'] = rat
-    spans = [rat]
-    for c in user_columns:
+    res_df.loc[res_df.index[i],
+               'チームレート'] = convertFromRatingToSpan(team_rating)
+    members = []
+    for c in user_columns[:-1]:
         username = df[c][i]
-        if c not in ('コーチ'):
-            spans.append(getUserSpan(username, False))
+        members.append(getUserSpan(username, False))
 
-    res_dict[df['チーム名'][i]] = spans
+    res_dict[df['チーム名'][i]] = {
+        'team_rating': team_rating,
+        'members': members
+    }
 
 res_df = res_df.reindex(
     columns=[

@@ -1,15 +1,45 @@
 // ==UserScript==
 // @name         ICPC Japan Standings Colorizer
 // @namespace    https://github.com/riantkb/icpc_standing_colorizer
-// @version      0.1.6
+// @version      0.2.0
 // @description  ICPC Japan Standings Colorizer
 // @author       riantkb
 // @match        http://www.yamagula.ic.i.u-tokyo.ac.jp/icpc2021/standings.html
 // @match        https://icpcsec.firebaseapp.com/*
 // @grant        none
 // @updateURL    https://github.com/riantkb/icpc_standing_colorizer/raw/master/ICPC-Standings-Colorizer.user.js
-// @require      https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js
 // ==/UserScript==
+
+
+function convertFromRatingToSpan(rating) {
+    if (rating <= 0) {
+        return `<span class="user-unrated">${rating}</span>`;
+    }
+    else if (rating < 400) {
+        return `<span class="user-gray">${rating}</span>`;
+    }
+    else if (rating < 800) {
+        return `<span class="user-brown">${rating}</span>`;
+    }
+    else if (rating < 1200) {
+        return `<span class="user-green">${rating}</span>`;
+    }
+    else if (rating < 1600) {
+        return `<span class="user-cyan">${rating}</span>`;
+    }
+    else if (rating < 2000) {
+        return `<span class="user-blue">${rating}</span>`;
+    }
+    else if (rating < 2400) {
+        return `<span class="user-yellow">${rating}</span>`;
+    }
+    else if (rating < 2800) {
+        return `<span class="user-orange">${rating}</span>`;
+    }
+    else {
+        return `<span class="user-red">${rating}</span>`;
+    }
+}
 
 
 function domestic() {
@@ -25,14 +55,15 @@ function domestic() {
             for (const e of lines) {
                 if (first) {
                     first = false;
-                    continue
+                    continue;
                 }
                 if (e == null) continue;
-                var a = e.querySelector('td:nth-child(3)')
+                var a = e.querySelector('td:nth-child(3)');
                 if (a == null) continue;
                 var tname = a.innerText.split("\n")[0];
                 if (tname in team_dic) {
-                    a.innerHTML += ` (${team_dic[tname][0]})<br>${team_dic[tname].slice(1).join(', ')}`
+                    var team_rating = convertFromRatingToSpan(team_dic[tname]['team_rating'])
+                    a.innerHTML += ` (${team_rating})<br>${team_dic[tname]['members'].join(', ')}`;
                 }
             }
             var univ_count = [];
@@ -40,10 +71,10 @@ function domestic() {
             for (const e of lines) {
                 if (first) {
                     first = false;
-                    continue
+                    continue;
                 }
                 if (e == null) continue;
-                var a = e.querySelector('td:nth-child(4)')
+                var a = e.querySelector('td:nth-child(4)');
                 if (a == null) continue;
                 var uname = a.innerText.split("\n")[0];
                 if (uname in univ_count) {
@@ -62,7 +93,7 @@ function domestic() {
                     continue
                 }
                 if (e == null) continue;
-                var a = e.querySelector('td:nth-child(4)')
+                var a = e.querySelector('td:nth-child(4)');
                 if (a == null) continue;
                 var uname = a.innerText.split("\n")[0];
                 var urank;
@@ -72,7 +103,7 @@ function domestic() {
                     urank = 1;
                 }
                 univ_rank[uname] = urank;
-                a.innerHTML += ` (${urank}/${univ_count[uname]})`
+                a.innerHTML += ` (${urank}/${univ_count[uname]})`;
 
                 var pass = 0;
                 if (pass_count < 10) {
@@ -89,13 +120,13 @@ function domestic() {
                     host = "";
                 }
                 if (pass > 0) {
-                    var b = e.querySelector('td:nth-child(1)')
-                    b.setAttribute('bgcolor', '#AAE0AA')
+                    var b = e.querySelector('td:nth-child(1)');
+                    b.setAttribute('bgcolor', '#AAE0AA');
                     if (pass == 1) {
                         pass_count++;
                     }
                     else {
-                        b.innerHTML += '*'
+                        b.innerHTML += '*';
                     }
                 }
             }
@@ -132,7 +163,8 @@ function regional() {
                 var tname = e.innerText.split("\n")[0];
                 if (tname in team_dic) {
                     var h = e.innerHTML
-                    h = h.replace(tname, `${tname} (${team_dic[tname][0]})<br><small><span>${team_dic[tname].slice(1).join(', ')}</span></small>`)
+                    var team_rating = convertFromRatingToSpan(team_dic[tname]['team_rating'])
+                    h = h.replace(tname, `${tname} (${team_rating})<br><small><span>${team_dic[tname]['members'].join(', ')}</span></small>`)
                     e.innerHTML = h
                 }
             }

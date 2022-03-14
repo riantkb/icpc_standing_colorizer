@@ -1,11 +1,11 @@
 // ==UserScript==
 // @name         ICPC Japan Standings Colorizer
 // @namespace    https://github.com/riantkb/icpc_standing_colorizer
-// @version      0.1.1
+// @version      0.1.2
 // @description  ICPC Japan Standings Colorizer
 // @author       riantkb
 // @match        http://www.yamagula.ic.i.u-tokyo.ac.jp/icpc2021/standings.html
-// @match        https://icpcsec.firebaseapp.com/*
+// @match        https://icpcsec.firebaseapp.com/standings/
 // @grant        none
 // @updateURL    https://github.com/riantkb/icpc_standing_colorizer/raw/master/ICPC-Standings-Colorizer.user.js
 // @require      https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js

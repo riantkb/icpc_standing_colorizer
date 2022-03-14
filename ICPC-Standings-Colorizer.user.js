@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         ICPC Japan Standings Colorizer
 // @namespace    https://github.com/riantkb/icpc_standing_colorizer
-// @version      0.1.3
+// @version      0.1.4
 // @description  ICPC Japan Standings Colorizer
 // @author       riantkb
 // @match        http://www.yamagula.ic.i.u-tokyo.ac.jp/icpc2021/standings.html
@@ -13,6 +13,7 @@
 
 
 function domestic() {
+    console.log("domestic");
     var lines = document.querySelectorAll("td.main > div > table > tbody > tr");
     if (lines.length == 0) {
         setTimeout(domestic, 500);
@@ -118,6 +119,7 @@ function domestic() {
 
 
 function regional() {
+    console.log("regional");
     var lines = document.querySelectorAll("div.team-col.team-name > span");
     // if (lines.length == 0) {
     //     setTimeout(regional, 500);
@@ -150,15 +152,12 @@ function regional() {
             setTimeout(regional, 3000);
         })
     })
-    setTimeout(regional, 1000);
+    setTimeout(main, 1000);
 
 }
 
-
-(function () {
-    'use strict';
-
-    console.log("main")
+function main() {
+    console.log("main");
     var url = window.location.href;
 
     if (url.match(new RegExp(/www.yamagula.ic.i.u-tokyo.ac.jp/)) != null) {
@@ -168,7 +167,12 @@ function regional() {
         setTimeout(regional, 500);
     }
     else {
-        console.log("no match url")
+        console.log("no match url");
     }
+}
+
+(function () {
+    'use strict';
+    main();
 })();
 

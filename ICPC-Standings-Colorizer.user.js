@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         ICPC Japan Standings Colorizer
 // @namespace    https://github.com/riantkb/icpc_standing_colorizer
-// @version      0.1.2
+// @version      0.1.3
 // @description  ICPC Japan Standings Colorizer
 // @author       riantkb
 // @match        http://www.yamagula.ic.i.u-tokyo.ac.jp/icpc2021/standings.html
@@ -119,10 +119,10 @@ function domestic() {
 
 function regional() {
     var lines = document.querySelectorAll("div.team-col.team-name > span");
-    if (lines.length == 0) {
-        setTimeout(regional, 500);
-        return;
-    }
+    // if (lines.length == 0) {
+    //     setTimeout(regional, 500);
+    //     return;
+    // }
     fetch("https://raw.githubusercontent.com/riantkb/icpc_standing_colorizer/master/teams.json", { cache: "no-store" }).then(res => {
         res.json().then(team_dic => {
             for (const e of lines) {
@@ -150,6 +150,7 @@ function regional() {
             setTimeout(regional, 3000);
         })
     })
+    setTimeout(regional, 1000);
 
 }
 

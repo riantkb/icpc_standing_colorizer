@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         ICPC Japan Standings Colorizer
 // @namespace    https://github.com/riantkb/icpc_standing_colorizer
-// @version      0.1.4
+// @version      0.1.5
 // @description  ICPC Japan Standings Colorizer
 // @author       riantkb
 // @match        http://www.yamagula.ic.i.u-tokyo.ac.jp/icpc2021/standings.html
@@ -13,7 +13,7 @@
 
 
 function domestic() {
-    console.log("domestic");
+    // console.log("domestic");
     var lines = document.querySelectorAll("td.main > div > table > tbody > tr");
     if (lines.length == 0) {
         setTimeout(domestic, 500);
@@ -119,7 +119,7 @@ function domestic() {
 
 
 function regional() {
-    console.log("regional");
+    // console.log("regional");
     var lines = document.querySelectorAll("div.team-col.team-name > span");
     // if (lines.length == 0) {
     //     setTimeout(regional, 500);
@@ -147,27 +147,27 @@ function regional() {
             for (let e of document.getElementsByClassName('user-unrated')) { e.style.color = "#000000" };
             for (let e of document.getElementsByClassName('user-admin')) { e.style.color = "#C000C0" };
         }).catch(_e => {
-            setTimeout(regional, 3000);
+            // setTimeout(regional, 3000);
         }).catch(_e => {
-            setTimeout(regional, 3000);
+            // setTimeout(regional, 3000);
         })
     })
     setTimeout(main, 1000);
-
 }
 
 function main() {
-    console.log("main");
+    // console.log("main");
     var url = window.location.href;
 
     if (url.match(new RegExp(/www.yamagula.ic.i.u-tokyo.ac.jp/)) != null) {
-        setTimeout(domestic, 500);
+        domestic();
     }
     else if (url.match(new RegExp(/icpcsec.firebaseapp.com\/standings/)) != null) {
-        setTimeout(regional, 500);
+        regional();
     }
     else {
-        console.log("no match url");
+        // console.log("no match url");
+        setTimeout(main, 1000);
     }
 }
 

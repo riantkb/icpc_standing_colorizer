@@ -431,7 +431,7 @@
             "<span class=\"user-cyan\">nrkt</span>"
         ]
     },
-    "TLE_WARM": {
+    "TLE_WARK": {
         "team_rating": 3220,
         "members": [
             "<span><img src=\"https://img.atcoder.jp/assets/icon/crown_silver.png\"/><span style=\"color:#A80080;\">WA_TLE</span></span>",

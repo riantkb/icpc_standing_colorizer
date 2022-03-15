@@ -430,5 +430,13 @@
             "<span class=\"user-blue\">horiso0921</span>",
             "<span class=\"user-cyan\">nrkt</span>"
         ]
+    },
+    "TLE_WARM": {
+        "team_rating": 3220,
+        "members": [
+            "<span><img src=\"https://img.atcoder.jp/assets/icon/crown_silver.png\"/><span style=\"color:#A80080;\">WA_TLE</span></span>",
+            "<span class=\"user-yellow\">kuhaku</span>",
+            "<span class=\"user-orange\">kotamanegi</span>"
+        ]
     }
 }

@@ -223,7 +223,7 @@ $(document).ready(function() {
 <p>This information is from <a href="%s">%s</a> (Last Update: %s).</p>
 <p>The team ratings are calculated based on <a href="https://codeforces.com/blog/entry/16986">https://codeforces.com/blog/entry/16986</a>.</p>
 <p><b>情報の真偽に対する一切の責任を負いません</b></p>
-<p><a href="./past/2021.html">2021</a></p>
+<p>Past years: <a href="./past/2021.html">2021</a></p>
 %s
 </body>
 </html>

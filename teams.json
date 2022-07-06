@@ -96,11 +96,11 @@
         ]
     },
     "nowcow": {
-        "team_rating": 2648,
+        "team_rating": 2671,
         "members": [
             "<span class=\"user-orange\">olphe</span>",
-            "\u306a\u30fc\u3076",
-            ""
+            "<span class=\"user-yellow\">nrvft</span>",
+            "<span class=\"user-blue\">new_textfile</span>"
         ]
     },
     "Kidamari Sketch": {
@@ -109,6 +109,22 @@
             "<span class=\"user-yellow\">phocom</span>",
             "<span class=\"user-yellow\">t98slider</span>",
             "<span class=\"user-yellow\">firiexp</span>"
+        ]
+    },
+    "lower_YBC": {
+        "team_rating": 2059,
+        "members": [
+            "<span class=\"user-yellow\">tyawanmusi</span>",
+            "<span class=\"user-blue\">dyktr_06</span>",
+            "<span class=\"user-cyan\">sepa_38</span>"
+        ]
+    },
+    "SPJ": {
+        "team_rating": 2726,
+        "members": [
+            "<span class=\"user-orange\">Kite_kuma</span>",
+            "<span class=\"user-orange\">nok0</span>",
+            "<span class=\"user-yellow\">zkou</span>"
         ]
     }
 }

@@ -86,5 +86,29 @@
             "<span class=\"user-yellow\">Hyado</span>",
             "<span class=\"user-orange\">hotman78</span>"
         ]
+    },
+    "SOS Brigade": {
+        "team_rating": 2049,
+        "members": [
+            "<span class=\"user-cyan\">season</span>",
+            "<span class=\"user-blue\">otoshigo</span>",
+            "<span class=\"user-blue\">shobonvip</span>"
+        ]
+    },
+    "nowcow": {
+        "team_rating": 2648,
+        "members": [
+            "<span class=\"user-orange\">olphe</span>",
+            "\u306a\u30fc\u3076",
+            ""
+        ]
+    },
+    "Kidamari Sketch": {
+        "team_rating": 2274,
+        "members": [
+            "<span class=\"user-yellow\">phocom</span>",
+            "<span class=\"user-yellow\">t98slider</span>",
+            "<span class=\"user-yellow\">firiexp</span>"
+        ]
     }
 }

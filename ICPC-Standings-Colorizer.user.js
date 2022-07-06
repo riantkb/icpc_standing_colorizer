@@ -1,10 +1,11 @@
 // ==UserScript==
 // @name         ICPC Japan Standings Colorizer
 // @namespace    https://github.com/riantkb/icpc_standing_colorizer
-// @version      0.3.0
+// @version      0.4.0
 // @description  ICPC Japan Standings Colorizer
 // @author       riantkb
-// @match        http://www.yamagula.ic.i.u-tokyo.ac.jp/icpc2021/standings.html
+// @match        http://www.yamagula.ic.i.u-tokyo.ac.jp/*/standings.html
+// @match        https://icpc.iisf.or.jp/past-icpc/*/common/guest_standings_ja.php.html
 // @match        https://icpcsec.firebaseapp.com/*
 // @grant        none
 // @updateURL    https://github.com/riantkb/icpc_standing_colorizer/raw/master/ICPC-Standings-Colorizer.user.js
@@ -92,7 +93,14 @@ function domestic() {
         setTimeout(domestic, 500);
         return;
     }
-    fetch("https://raw.githubusercontent.com/riantkb/icpc_standing_colorizer/master/teams.json", { cache: "no-store" }).then(res => {
+
+    var fetchurl = "https://raw.githubusercontent.com/riantkb/icpc_standing_colorizer/master/teams.json";
+    var url = window.location.href;
+    if (url.match(/icpc2021/) != null || url.match(/domestic2021/) != null) {
+        fetchurl = "https://raw.githubusercontent.com/riantkb/icpc_standing_colorizer/master/past/2021.json";
+    }
+
+    fetch(fetchurl, { cache: "no-store" }).then(res => {
         res.json().then(team_dic => {
             var first = true;
             for (const e of lines) {
@@ -205,7 +213,8 @@ function regional() {
     //     setTimeout(regional, 500);
     //     return;
     // }
-    fetch("https://raw.githubusercontent.com/riantkb/icpc_standing_colorizer/master/teams.json", { cache: "no-store" }).then(res => {
+    var fetchurl = "https://raw.githubusercontent.com/riantkb/icpc_standing_colorizer/master/teams.json";
+    fetch(fetchurl, { cache: "no-store" }).then(res => {
         res.json().then(team_dic => {
             for (const e of lines) {
                 if (e == null) continue;
@@ -240,10 +249,10 @@ function regional() {
 function main() {
     // console.log("main");
     var url = window.location.href;
-    if (url.match(new RegExp(/www.yamagula.ic.i.u-tokyo.ac.jp/)) != null) {
+    if (url.match(/www.yamagula.ic.i.u-tokyo.ac.jp/) != null || url.match(/icpc.iisf.or.jp\/past-icpc/) != null) {
         domestic();
     }
-    else if (url.match(new RegExp(/icpcsec.firebaseapp.com\/standings/)) != null) {
+    else if (url.match(/icpcsec.firebaseapp.com\/standings/) != null) {
         regional();
     }
     else {

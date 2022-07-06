@@ -9,6 +9,10 @@ import pickle
 
 import rating_utils
 
+
+YEAR = 2022
+
+
 valid_chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789_'
 
 pickle_path = 'atcoder.pickle'
@@ -137,7 +141,7 @@ def getUserSpan(username, enableLink):
             return f'{icon}{str(uinfo.span)}'
 
 
-url = 'https://jag-icpc.org/?2021%2FTeams%2FList'
+url = f'https://jag-icpc.org/?{YEAR}%2FTeams%2FList'
 df = pd.read_html(url)[1].fillna('')[5:].reset_index(drop=True)
 df = df.rename(columns={'メンバー 1': 'メンバー1', 'コーチ，ココーチ': 'コーチ'})
 res_df = df.copy()
@@ -190,7 +194,7 @@ complete_html = """
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.0/js/jquery.tablesorter.min.js"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.0/css/theme.default.min.css">
-<title>ICPC 2021 Domestic Teams</title>
+<title>ICPC %d Domestic Teams</title>
 <style>
 table a {text-decoration: none;}
 .username > span {font-weight:bold;}
@@ -219,10 +223,11 @@ $(document).ready(function() {
 <p>This information is from <a href="https://jag-icpc.org/?2021%%2FTeams%%2FList">https://jag-icpc.org/?2021%%2FTeams%%2FList</a> (Last Update: %s).</p>
 <p>The team ratings are calculated based on <a href="https://codeforces.com/blog/entry/16986">https://codeforces.com/blog/entry/16986</a>.</p>
 <p><b>情報の真偽に対する一切の責任を負いません</b></p>
+<p><a href="./past/2021.html">2021</a></p>
 %s
 </body>
 </html>
-""" % (datetime.datetime.now(), df_html)
+""" % (YEAR, datetime.datetime.now(), df_html)
 
 with open('index.html', 'w') as f:
     f.write(complete_html)

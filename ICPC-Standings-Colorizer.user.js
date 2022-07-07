@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         ICPC Japan Standings Colorizer
 // @namespace    https://github.com/riantkb/icpc_standing_colorizer
-// @version      0.5.2
+// @version      0.5.3
 // @description  ICPC Japan Standings Colorizer
 // @author       riantkb
 // @match        http://www.yamagula.ic.i.u-tokyo.ac.jp/*/standings.html
@@ -199,7 +199,7 @@ function domestic() {
 }
 
 
-function regional() {
+function firebaseapp(isDomestic) {
     // console.log("regional");
     var lines0 = document.querySelectorAll("div.team-col.team-name");
     for (const e of lines0) {
@@ -223,8 +223,48 @@ function regional() {
                     // var team_rating = convertFromRatingToSpan(team_dic[tname]['team_rating'])
                     var circle = generateTopcoderLikeCircle(team_dic[tname]['team_rating'])
                     var circle_span = `<span class='tooltip1'>${circle}<div class='description1'>${team_dic[tname]['team_rating']}</div></span>`;
-                    h = h.replace(tname, `${circle_span} ${tname}<br><small><span>${team_dic[tname]['members'].join(', ')}</span></small>`);
+                    h = h.replace(tname, `${circle_span} ${tname}<br><span>${team_dic[tname]['members'].join(', ')}</span>`);
                     e.innerHTML = h
+                }
+            }
+            if (!isDomestic) return;
+            var univ_rank = [];
+            var pass_count = 0;
+            var host = "Keio University";
+            for (const e of lines0) {
+                if (e == null) continue;
+                if (e.parentNode.parentNode.classList.contains("sticky")) continue;
+                var a = e.querySelector('span > small > span');
+                if (a == null) continue;
+                var uname = a.innerText.split("[")[0];
+                var urank;
+                if (uname in univ_rank) {
+                    urank = univ_rank[uname] + 1;
+                } else {
+                    urank = 1;
+                }
+                univ_rank[uname] = urank;
+                var pass = 0;
+                if (pass_count < 10) {
+                    pass = 1;
+                } else if (pass_count < 20) {
+                    if (urank <= 3) pass = 1;
+                } else if (pass_count < 30) {
+                    if (urank <= 2) pass = 1;
+                } else if (pass_count < 39) {
+                    if (urank <= 1) pass = 1;
+                }
+                if (pass == 0 && uname == host) {
+                    pass = 2;
+                    host = "";
+                }
+                if (pass > 0) {
+                    e.style.backgroundColor = "#e3fae3";
+                    if (pass == 1) {
+                        pass_count++;
+                    }
+                } else {
+                    e.style.backgroundColor = "";
                 }
             }
         }).catch(_e => {
@@ -243,7 +283,8 @@ function main() {
         domestic();
     }
     else if (url.match(/icpcsec.firebaseapp.com\/standings/) != null) {
-        regional();
+        // regional();
+        firebaseapp(true);
     }
     else {
         // console.log("no match url");

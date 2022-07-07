@@ -190,5 +190,21 @@
             "@fenger0126",
             "<span class=\"user-blue\">Kyo_s_s</span>"
         ]
+    },
+    "NP_komplete": {
+        "team_rating": 1416,
+        "members": [
+            "pro_anyone",
+            "<span class=\"user-cyan\">arad</span>",
+            ""
+        ]
+    },
+    "Bu-Bu-Du-Ke": {
+        "team_rating": 2516,
+        "members": [
+            "<span class=\"user-yellow\">suisen</span>",
+            "<span class=\"user-yellow\">otera</span>",
+            "<span class=\"user-yellow\">kencho</span>"
+        ]
     }
 }

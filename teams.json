@@ -16,11 +16,11 @@
         ]
     },
     "Imperishable": {
-        "team_rating": 2137,
+        "team_rating": 2207,
         "members": [
             "<span class=\"user-blue\">Imperi</span>",
             "<span class=\"user-yellow\">ebi_fly</span>",
-            "0214sh7"
+            "<span class=\"user-blue\">x0214sh7</span>"
         ]
     },
     "DELIAIR": {
@@ -133,6 +133,38 @@
             "@5tokko",
             "@57tggx",
             "@h28i_Hide"
+        ]
+    },
+    "Aobayama_dropout": {
+        "team_rating": 2837,
+        "members": [
+            "<span class=\"user-red\">kotatsugame</span>",
+            "<span class=\"user-yellow\">ha15</span>",
+            "<span class=\"user-cyan\">mine691</span>"
+        ]
+    },
+    "Jingisucat": {
+        "team_rating": 234,
+        "members": [
+            "\u307e\u3055\u3041\u3041",
+            "\u307a\u3063\u3066\u3043\u30fc",
+            ""
+        ]
+    },
+    "YUPC": {
+        "team_rating": 1994,
+        "members": [
+            "<span class=\"user-blue\">myau</span>",
+            "<span class=\"user-cyan\">hashimoto76</span>",
+            "<span class=\"user-unrated\">nemurineko</span>"
+        ]
+    },
+    "KOMOREBI": {
+        "team_rating": 3065,
+        "members": [
+            "<span><img src=\"https://img.atcoder.jp/assets/icon/crown_bronze.png\"/><span class=\"user-red\">noimi</span></span>",
+            "<span class=\"user-orange\">jell</span>",
+            "<span class=\"user-orange\">mechanicalpenciI</span>"
         ]
     }
 }

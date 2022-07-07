@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         ICPC Japan Standings Colorizer
 // @namespace    https://github.com/riantkb/icpc_standing_colorizer
-// @version      0.5.1
+// @version      0.5.2
 // @description  ICPC Japan Standings Colorizer
 // @author       riantkb
 // @match        http://www.yamagula.ic.i.u-tokyo.ac.jp/*/standings.html
@@ -80,14 +80,14 @@ function getColorCode(rating) {
 
 function generateTopcoderLikeCircle(rating) {
     if (rating >= 3600) {
-        return `<span style="display: inline-block; border-radius: 50%; border-style: solid; border-width: 1px; height: 12px; width: 12px; border-color: rgb(255, 215, 0); background: linear-gradient(to right, rgb(255, 215, 0), white, rgb(255, 215, 0));" data-toggle="tooltip" data-placement="top" title="${rating}"></span>`
+        return `<span style="display: inline-block; border-radius: 50%; border-style: solid; border-width: 1px; height: 12px; width: 12px; border-color: rgb(255, 215, 0); background: linear-gradient(to right, rgb(255, 215, 0), white, rgb(255, 215, 0));"></span>`
     }
     if (rating >= 3200) {
-        return `<span style="display: inline-block; border-radius: 50%; border-style: solid; border-width: 1px; height: 12px; width: 12px; border-color: rgb(128, 128, 128); background: linear-gradient(to right, rgb(128, 128, 128), white, rgb(128, 128, 128));" data-toggle="tooltip" data-placement="top" title="${rating}"></span>`
+        return `<span style="display: inline-block; border-radius: 50%; border-style: solid; border-width: 1px; height: 12px; width: 12px; border-color: rgb(128, 128, 128); background: linear-gradient(to right, rgb(128, 128, 128), white, rgb(128, 128, 128));"></span>`
     }
     var ccode = getColorCode(rating)
     var fill_ratio = rating >= 3200 ? 100 : rating % 400 / 4
-    return `<span style="display: inline-block; border-radius: 50%; border-style: solid; border-width: 1px; height: 12px; width: 12px; border-color: ${ccode}; background: linear-gradient(to top, ${ccode} ${fill_ratio}%, rgba(0,0,0,0) ${fill_ratio}%);" data-toggle="tooltip" data-placement="top" title="${rating}"></span>`
+    return `<span style="display: inline-block; border-radius: 50%; border-style: solid; border-width: 1px; height: 12px; width: 12px; border-color: ${ccode}; background: linear-gradient(to top, ${ccode} ${fill_ratio}%, rgba(0,0,0,0) ${fill_ratio}%);"></span>`
 }
 
 
@@ -201,9 +201,6 @@ function domestic() {
 
 function regional() {
     // console.log("regional");
-    // $(function () {
-    //     $('[data-toggle="tooltip"]').tooltip()
-    // })
     var lines0 = document.querySelectorAll("div.team-col.team-name");
     for (const e of lines0) {
         if (e == null) continue;

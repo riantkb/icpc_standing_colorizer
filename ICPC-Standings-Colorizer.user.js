@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         ICPC Japan Standings Colorizer
 // @namespace    https://github.com/riantkb/icpc_standing_colorizer
-// @version      0.5.0
+// @version      0.5.1
 // @description  ICPC Japan Standings Colorizer
 // @author       riantkb
 // @match        http://www.yamagula.ic.i.u-tokyo.ac.jp/*/standings.html
@@ -121,7 +121,8 @@ function domestic() {
                     var h = a.innerHTML
                     // var team_rating = convertFromRatingToSpan(team_dic[tname]['team_rating'])
                     var circle = generateTopcoderLikeCircle(team_dic[tname]['team_rating'])
-                    h = h.replace(tname, `${circle} ${tname}<br><small><span>${team_dic[tname]['members'].join(', ')}</span></small>`);
+                    var circle_span = `<span class='tooltip1'>${circle}<div class='description1'>${team_dic[tname]['team_rating']}</div></span>`;
+                    h = h.replace(tname, `${circle_span} ${tname}<br><small><span>${team_dic[tname]['members'].join(', ')}</span></small>`);
                     a.innerHTML = h
                 }
             }
@@ -224,9 +225,8 @@ function regional() {
                     var h = e.innerHTML
                     // var team_rating = convertFromRatingToSpan(team_dic[tname]['team_rating'])
                     var circle = generateTopcoderLikeCircle(team_dic[tname]['team_rating'])
-                    var t_name_span = "<span class='tooltip1'> <span class='script_tname'> "
-                        + tname + "</span> <div class='description1'>" + circle + team_dic[tname]['team_rating'] + "</div> </span>";
-                    h = h.replace(tname, `${circle} ${t_name_span}<br><small><span>${team_dic[tname]['members'].join(', ')}</span></small>`)
+                    var circle_span = `<span class='tooltip1'>${circle}<div class='description1'>${team_dic[tname]['team_rating']}</div></span>`;
+                    h = h.replace(tname, `${circle_span} ${tname}<br><small><span>${team_dic[tname]['members'].join(', ')}</span></small>`);
                     e.innerHTML = h
                 }
             }

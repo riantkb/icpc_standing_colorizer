@@ -166,5 +166,29 @@
             "<span class=\"user-orange\">jell</span>",
             "<span class=\"user-orange\">mechanicalpenciI</span>"
         ]
+    },
+    "Meiji_de_Koisuru_5byoumae": {
+        "team_rating": 1621,
+        "members": [
+            "<span class=\"user-cyan\">shop_one</span>",
+            "<span class=\"user-cyan\">GunseiKPaseri</span>",
+            "<span class=\"user-green\">king_of_coder</span>"
+        ]
+    },
+    "TKMD": {
+        "team_rating": 2129,
+        "members": [
+            "<span class=\"user-blue\">Sooh</span>",
+            "<span class=\"user-yellow\">kapibara</span>",
+            "<span class=\"user-cyan\">perovskite</span>"
+        ]
+    },
+    "corbeau": {
+        "team_rating": 1727,
+        "members": [
+            "<span class=\"user-cyan\">ecto0310</span>",
+            "@fenger0126",
+            "<span class=\"user-blue\">Kyo_s_s</span>"
+        ]
     }
 }

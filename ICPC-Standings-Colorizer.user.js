@@ -1,16 +1,21 @@
 // ==UserScript==
 // @name         ICPC Japan Standings Colorizer
 // @namespace    https://github.com/riantkb/icpc_standing_colorizer
-// @version      0.4.0
+// @version      0.5.0
 // @description  ICPC Japan Standings Colorizer
 // @author       riantkb
 // @match        http://www.yamagula.ic.i.u-tokyo.ac.jp/*/standings.html
 // @match        https://icpc.iisf.or.jp/past-icpc/*/common/guest_standings_ja.php.html
 // @match        https://icpcsec.firebaseapp.com/*
-// @grant        none
+// @grant        GM_getResourceText
+// @grant        GM_addStyle
+// @resource     style.css https://raw.githubusercontent.com/riantkb/icpc_standing_colorizer/master/tampermonkey_script.css
 // @updateURL    https://github.com/riantkb/icpc_standing_colorizer/raw/master/ICPC-Standings-Colorizer.user.js
 // ==/UserScript==
 
+var newCSS;
+newCSS = GM_getResourceText("style.css");
+GM_addStyle(newCSS);
 
 function convertFromRatingToSpan(rating) {
     if (rating <= 0) {
@@ -116,7 +121,7 @@ function domestic() {
                     var h = a.innerHTML
                     // var team_rating = convertFromRatingToSpan(team_dic[tname]['team_rating'])
                     var circle = generateTopcoderLikeCircle(team_dic[tname]['team_rating'])
-                    h = h.replace(tname, `${circle} ${tname}<br><small><span>${team_dic[tname]['members'].join(', ')}</span></small>`)
+                    h = h.replace(tname, `${circle} ${tname}<br><small><span>${team_dic[tname]['members'].join(', ')}</span></small>`);
                     a.innerHTML = h
                 }
             }
@@ -184,16 +189,6 @@ function domestic() {
                     }
                 }
             }
-            for (let e of document.getElementsByClassName('user-red')) { e.style.color = "#FF0000" };
-            for (let e of document.getElementsByClassName('user-orange')) { e.style.color = "#FF8000" };
-            for (let e of document.getElementsByClassName('user-yellow')) { e.style.color = "#C0C000" };
-            for (let e of document.getElementsByClassName('user-blue')) { e.style.color = "#0000FF" };
-            for (let e of document.getElementsByClassName('user-cyan')) { e.style.color = "#00C0C0" };
-            for (let e of document.getElementsByClassName('user-green')) { e.style.color = "#008000" };
-            for (let e of document.getElementsByClassName('user-brown')) { e.style.color = "#804000" };
-            for (let e of document.getElementsByClassName('user-gray')) { e.style.color = "#808080" };
-            for (let e of document.getElementsByClassName('user-unrated')) { e.style.color = "#000000" };
-            for (let e of document.getElementsByClassName('user-admin')) { e.style.color = "#C000C0" };
         }).catch(_e => {
             setTimeout(domestic, 3000);
         }).catch(_e => {
@@ -208,6 +203,12 @@ function regional() {
     // $(function () {
     //     $('[data-toggle="tooltip"]').tooltip()
     // })
+    var lines0 = document.querySelectorAll("div.team-col.team-name");
+    for (const e of lines0) {
+        if (e == null) continue;
+        e.style.overflow = "visible";
+    }
+
     var lines = document.querySelectorAll("div.team-col.team-name > span");
     // if (lines.length == 0) {
     //     setTimeout(regional, 500);
@@ -223,27 +224,19 @@ function regional() {
                     var h = e.innerHTML
                     // var team_rating = convertFromRatingToSpan(team_dic[tname]['team_rating'])
                     var circle = generateTopcoderLikeCircle(team_dic[tname]['team_rating'])
-                    h = h.replace(tname, `${circle} ${tname}<br><small><span>${team_dic[tname]['members'].join(', ')}</span></small>`)
+                    var t_name_span = "<span class='tooltip1'> <span class='script_tname'> "
+                        + tname + "</span> <div class='description1'>" + circle + team_dic[tname]['team_rating'] + "</div> </span>";
+                    h = h.replace(tname, `${circle} ${t_name_span}<br><small><span>${team_dic[tname]['members'].join(', ')}</span></small>`)
                     e.innerHTML = h
                 }
             }
-            for (let e of document.getElementsByClassName('user-red')) { e.style.color = "#FF0000" };
-            for (let e of document.getElementsByClassName('user-orange')) { e.style.color = "#FF8000" };
-            for (let e of document.getElementsByClassName('user-yellow')) { e.style.color = "#C0C000" };
-            for (let e of document.getElementsByClassName('user-blue')) { e.style.color = "#0000FF" };
-            for (let e of document.getElementsByClassName('user-cyan')) { e.style.color = "#00C0C0" };
-            for (let e of document.getElementsByClassName('user-green')) { e.style.color = "#008000" };
-            for (let e of document.getElementsByClassName('user-brown')) { e.style.color = "#804000" };
-            for (let e of document.getElementsByClassName('user-gray')) { e.style.color = "#808080" };
-            for (let e of document.getElementsByClassName('user-unrated')) { e.style.color = "#000000" };
-            for (let e of document.getElementsByClassName('user-admin')) { e.style.color = "#C000C0" };
         }).catch(_e => {
             // setTimeout(regional, 3000);
         }).catch(_e => {
             // setTimeout(regional, 3000);
         })
     })
-    setTimeout(main, 1000);
+    setTimeout(main, 4000);
 }
 
 function main() {

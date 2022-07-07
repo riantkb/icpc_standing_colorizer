@@ -126,5 +126,13 @@
             "<span class=\"user-orange\">nok0</span>",
             "<span class=\"user-yellow\">zkou</span>"
         ]
+    },
+    "haunting": {
+        "team_rating": 234,
+        "members": [
+            "@5tokko",
+            "@57tggx",
+            "@h28i_Hide"
+        ]
     }
 }

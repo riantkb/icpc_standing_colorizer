@@ -278,5 +278,29 @@
             "<span class=\"user-cyan\">littlegirl112</span>",
             "<span class=\"user-green\">hiiragi589</span>"
         ]
+    },
+    "EM1RP": {
+        "team_rating": 1272,
+        "members": [
+            "\u3077\u3063\u3061\u3087",
+            "<span class=\"user-unrated\">ryo</span>",
+            "<span class=\"user-cyan\">pelno</span>"
+        ]
+    },
+    "Anya AC Suki": {
+        "team_rating": 1517,
+        "members": [
+            "<span class=\"user-cyan\">Herring101</span>",
+            "<span class=\"user-cyan\">hiro71687</span>",
+            "<span class=\"user-green\">Gandalfr</span>"
+        ]
+    },
+    "Go2Heaven": {
+        "team_rating": 1720,
+        "members": [
+            "<span class=\"user-green\">Nanashima</span>",
+            "<span class=\"user-blue\">Pech1</span>",
+            "<span class=\"user-cyan\">harurun</span>"
+        ]
     }
 }

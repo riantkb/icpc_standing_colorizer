@@ -206,5 +206,13 @@
             "<span class=\"user-yellow\">otera</span>",
             "<span class=\"user-yellow\">kencho</span>"
         ]
+    },
+    "takahashi_hokudai": {
+        "team_rating": 1365,
+        "members": [
+            "@pitsu_kyo_pro",
+            "@itigo_purokonn",
+            "<span class=\"user-cyan\">wakuwinmail</span>"
+        ]
     }
 }

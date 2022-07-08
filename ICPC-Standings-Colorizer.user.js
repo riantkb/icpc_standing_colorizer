@@ -233,7 +233,6 @@ function firebaseapp() {
                     e.innerHTML = h
                 }
             }
-            if (!isDomestic) return;
             
             var univ_count = [];
             var team_rank = [];
@@ -284,10 +283,12 @@ function firebaseapp() {
                 var uname = a.innerText.split("[")[0].trim();
                 var tname = e.innerText.split("\n")[0];
                 var pass = team_is_pass[tname];
-                if (pass > 0) {
-                    e.style.backgroundColor = "#e3fae3";
-                } else {
-                    e.style.backgroundColor = "";
+                if (isDomestic) {
+                    if (pass > 0) {
+                        e.style.backgroundColor = "#e3fae3";
+                    } else {
+                        e.style.backgroundColor = "";
+                    }
                 }
                 a.innerText = uname + "[" + team_rank[tname] + "/" + univ_count[uname] + "]";
             }

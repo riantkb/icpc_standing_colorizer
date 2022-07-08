@@ -229,7 +229,7 @@ function firebaseapp() {
                     // var team_rating = convertFromRatingToSpan(team_dic[tname]['team_rating'])
                     var circle = generateTopcoderLikeCircle(team_dic[tname]['team_rating'])
                     var circle_span = `<span class='tooltip1'>${circle}<div class='description1'>${team_dic[tname]['team_rating']}</div></span>`;
-                    h = h.replace(tname, `${circle_span} ${tname}<br><div style="color: red; display: inline-block; _display: inline;"><small>${team_dic[tname]['members'].join(', ')}</small></div>`);
+                    h = h.replace(tname, `${circle_span} ${tname}<br><div style="display: inline-block; _display: inline;"><small>${team_dic[tname]['members'].join(', ')}</small></div>`);
                     e.innerHTML = h
                 }
             }

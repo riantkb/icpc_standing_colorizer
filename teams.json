@@ -271,7 +271,7 @@
             "<span class=\"user-green\">uytvcc</span>"
         ]
     },
-    "diJkstra": {
+    "diJKstra": {
         "team_rating": 1774,
         "members": [
             "<span class=\"user-blue\">Daylight</span>",
@@ -357,6 +357,30 @@
             "<span class=\"user-brown\">nobuchi</span>",
             "<span class=\"user-green\">Higurashi</span>",
             "<span class=\"user-green\">polyester</span>"
+        ]
+    },
+    "Anrirled": {
+        "team_rating": 2661,
+        "members": [
+            "<span class=\"user-yellow\">SPD_9X2</span>",
+            "<span class=\"user-yellow\">maze1230</span>",
+            "<span class=\"user-orange\">rin204</span>"
+        ]
+    },
+    "0sakana_daisuki": {
+        "team_rating": 331,
+        "members": [
+            "\u30af\u30bd\u904b\u30b2\u30de\u30f3",
+            "\u30b0\u30ec\u30a4\u30b7\u30a2",
+            "<span class=\"user-gray\">soichi6464</span>"
+        ]
+    },
+    "ousama_pngn": {
+        "team_rating": 2167,
+        "members": [
+            "<span class=\"user-blue\">pngn</span>",
+            "<span class=\"user-yellow\">eiya</span>",
+            "moyashi_senpai"
         ]
     }
 }

@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         ICPC Japan Standings Colorizer
 // @namespace    https://github.com/riantkb/icpc_standing_colorizer
-// @version      0.5.7
+// @version      0.5.8
 // @description  ICPC Japan Standings Colorizer
 // @author       riantkb
 // @match        http://www.yamagula.ic.i.u-tokyo.ac.jp/*/standings.html
@@ -229,7 +229,7 @@ function firebaseapp() {
                     // var team_rating = convertFromRatingToSpan(team_dic[tname]['team_rating'])
                     var circle = generateTopcoderLikeCircle(team_dic[tname]['team_rating'])
                     var circle_span = `<span class='tooltip1'>${circle}<div class='description1'>${team_dic[tname]['team_rating']}</div></span>`;
-                    h = h.replace(tname, `${circle_span} ${tname}<br><small>${team_dic[tname]['members'].join(', ')}</small>`);
+                    h = h.replace(tname, `${circle_span} ${tname}<br><div style="display: inline-block; _display: inline;"><small>${team_dic[tname]['members'].join(', ')}</small></div>`);
                     e.innerHTML = h
                 }
             }
@@ -241,7 +241,7 @@ function firebaseapp() {
             for (const e of lines0) {
                 if (e == null) continue;
                 if (e.parentNode.parentNode.classList.contains("sticky")) continue;
-                var a = e.querySelector('span > small:last-child > span');
+                var a = e.querySelector('span > small > span');
                 if (a == null) continue;
                 var uname = a.innerText.split("[")[0];
                 var urank;

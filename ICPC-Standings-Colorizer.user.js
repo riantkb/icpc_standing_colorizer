@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         ICPC Japan Standings Colorizer
 // @namespace    https://github.com/riantkb/icpc_standing_colorizer
-// @version      0.5.5
+// @version      0.5.6
 // @description  ICPC Japan Standings Colorizer
 // @author       riantkb
 // @match        http://www.yamagula.ic.i.u-tokyo.ac.jp/*/standings.html
@@ -237,6 +237,7 @@ function firebaseapp() {
             var univ_rank = [];
             var pass_count = 0;
             var host = "Keio University";
+            var host_jp = "慶應義塾大学";
             for (const e of lines0) {
                 if (e == null) continue;
                 if (e.parentNode.parentNode.classList.contains("sticky")) continue;
@@ -260,9 +261,11 @@ function firebaseapp() {
                 } else if (pass_count < 39) {
                     if (urank <= 1) pass = 1;
                 }
-                if (pass == 0 && uname == host) {
+                uname = uname.trim();
+                if (pass == 0 && (uname == host || uname == host_jp)) {
                     pass = 2;
                     host = "";
+                    host_jp = "";
                 }
                 if (pass > 0) {
                     e.style.backgroundColor = "#e3fae3";

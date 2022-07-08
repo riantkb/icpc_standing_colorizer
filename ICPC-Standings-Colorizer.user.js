@@ -241,7 +241,7 @@ function firebaseapp() {
             for (const e of lines0) {
                 if (e == null) continue;
                 if (e.parentNode.parentNode.classList.contains("sticky")) continue;
-                var a = e.querySelector('span > small:last-child > span');
+                var a = e.querySelector('span > small > span');
                 if (a == null) continue;
                 var uname = a.innerText.split("[")[0];
                 var urank;

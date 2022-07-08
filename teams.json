@@ -192,11 +192,11 @@
         ]
     },
     "NP_komplete": {
-        "team_rating": 1416,
+        "team_rating": 1498,
         "members": [
             "pro_anyone",
             "<span class=\"user-cyan\">arad</span>",
-            ""
+            "<span class=\"user-cyan\">maru65536</span>"
         ]
     },
     "Bu-Bu-Du-Ke": {
@@ -227,8 +227,8 @@
         "team_rating": 1803,
         "members": [
             "<span class=\"user-blue\">chomonolis</span>",
-            "@mizuyoucan_",
-            "@Re_take911"
+            "mizuyoucan_",
+            "Re_take911"
         ]
     },
     "Girigiri_yellows": {
@@ -333,6 +333,22 @@
             "<span class=\"user-unrated\">torii</span>",
             "<span class=\"user-brown\">ryota</span>",
             "<span class=\"user-unrated\">nao</span>"
+        ]
+    },
+    "triC": {
+        "team_rating": 1662,
+        "members": [
+            "<span class=\"user-blue\">kya</span>",
+            "<span class=\"user-unrated\">ayu</span>",
+            "igeeeeee"
+        ]
+    },
+    "oraCle_MaChine": {
+        "team_rating": 2738,
+        "members": [
+            "<span class=\"user-orange\">cuthbert</span>",
+            "<span class=\"user-orange\">Motsu_xe</span>",
+            "<span class=\"user-orange\">carrot46</span>"
         ]
     }
 }

@@ -302,5 +302,29 @@
             "<span class=\"user-blue\">Pech1</span>",
             "<span class=\"user-cyan\">harurun</span>"
         ]
+    },
+    "formula": {
+        "team_rating": 813,
+        "members": [
+            "<span class=\"user-brown\">lusciousflan</span>",
+            "<span class=\"user-brown\">nuitfleur</span>",
+            "<span class=\"user-gray\">meu</span>"
+        ]
+    },
+    "FUNCoder": {
+        "team_rating": 1834,
+        "members": [
+            "<span class=\"user-blue\">ttkkggww</span>",
+            "<span class=\"user-green\">ryusuke_h</span>",
+            "<span class=\"user-cyan\">s7776</span>"
+        ]
+    },
+    "The Raspberry Candies": {
+        "team_rating": 2831,
+        "members": [
+            "<span class=\"user-orange\">chinerist</span>",
+            "<span class=\"user-orange\">rniya</span>",
+            "<span class=\"user-orange\">tabr</span>"
+        ]
     }
 }

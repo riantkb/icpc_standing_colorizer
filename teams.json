@@ -216,11 +216,11 @@
         ]
     },
     "oriKoU3": {
-        "team_rating": 2144,
+        "team_rating": 2145,
         "members": [
             "<span class=\"user-yellow\">naniwazu</span>",
             "<span class=\"user-cyan\">Capo</span>",
-            "magoshi"
+            "<span class=\"user-green\">yukihira_pot</span>"
         ]
     },
     "Citrus taker": {
@@ -325,6 +325,14 @@
             "<span class=\"user-orange\">chinerist</span>",
             "<span class=\"user-orange\">rniya</span>",
             "<span class=\"user-orange\">tabr</span>"
+        ]
+    },
+    "Seiryo_blocker": {
+        "team_rating": 547,
+        "members": [
+            "<span class=\"user-unrated\">torii</span>",
+            "<span class=\"user-brown\">ryota</span>",
+            "<span class=\"user-unrated\">nao</span>"
         ]
     }
 }

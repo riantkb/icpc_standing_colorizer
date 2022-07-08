@@ -254,5 +254,29 @@
             "<span class=\"user-yellow\">suzuken_w</span>",
             "<span class=\"user-yellow\">bayashiko</span>"
         ]
+    },
+    "Heno World": {
+        "team_rating": 3331,
+        "members": [
+            "<span><img src=\"https://img.atcoder.jp/assets/icon/crown_silver.png\"/><span style=\"color:#6BB75B;\">heno239</span></span>",
+            "<span class=\"user-orange\">moririn2528</span>",
+            "<span class=\"user-orange\">yamunaku</span>"
+        ]
+    },
+    "CUPC": {
+        "team_rating": 2196,
+        "members": [
+            "<span class=\"user-yellow\">hanyu</span>",
+            "<span class=\"user-yellow\">stoq</span>",
+            "<span class=\"user-green\">uytvcc</span>"
+        ]
+    },
+    "diJkstra": {
+        "team_rating": 1774,
+        "members": [
+            "<span class=\"user-blue\">Daylight</span>",
+            "<span class=\"user-cyan\">littlegirl112</span>",
+            "<span class=\"user-green\">hiiragi589</span>"
+        ]
     }
 }

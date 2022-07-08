@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         ICPC Japan Standings Colorizer
 // @namespace    https://github.com/riantkb/icpc_standing_colorizer
-// @version      0.5.8
+// @version      0.5.9
 // @description  ICPC Japan Standings Colorizer
 // @author       riantkb
 // @match        http://www.yamagula.ic.i.u-tokyo.ac.jp/*/standings.html
@@ -233,24 +233,29 @@ function firebaseapp() {
                     e.innerHTML = h
                 }
             }
-            if (!isDomestic) return;
-            var univ_rank = [];
+            
+            var univ_count = [];
+            var team_rank = [];
             var pass_count = 0;
             var host = "Keio University";
             var host_jp = "慶應義塾大学";
+            var team_is_pass = [];
             for (const e of lines0) {
                 if (e == null) continue;
-                if (e.parentNode.parentNode.classList.contains("sticky")) continue;
+                if (e.parentNode.parentNode.classList.contains("sticky")) continue; // pass pined
                 var a = e.querySelector('span > small > span');
                 if (a == null) continue;
-                var uname = a.innerText.split("[")[0];
-                var urank;
-                if (uname in univ_rank) {
-                    urank = univ_rank[uname] + 1;
+                var uname = a.innerText.split("[")[0].trim();
+                if (uname in univ_count) {
+                    univ_count[uname] += 1;
                 } else {
-                    urank = 1;
+                    univ_count[uname] = 1;
                 }
-                univ_rank[uname] = urank;
+                var tname = e.innerText.split("\n")[0];
+                var urank = univ_count[uname];
+                team_rank[tname] = urank;
+
+                
                 var pass = 0;
                 if (pass_count < 10) {
                     pass = 1;
@@ -261,20 +266,31 @@ function firebaseapp() {
                 } else if (pass_count < 39) {
                     if (urank <= 1) pass = 1;
                 }
-                uname = uname.trim();
+                if (pass == 1) {
+                    pass_count++;
+                }
                 if (pass == 0 && (uname == host || uname == host_jp)) {
                     pass = 2;
                     host = "";
                     host_jp = "";
                 }
-                if (pass > 0) {
-                    e.style.backgroundColor = "#e3fae3";
-                    if (pass == 1) {
-                        pass_count++;
+                team_is_pass[tname] = pass;
+            }
+            for (const e of lines0) {
+                if (e == null) continue;
+                var a = e.querySelector('span > small > span');
+                if (a == null) continue;
+                var uname = a.innerText.split("[")[0].trim();
+                var tname = e.innerText.split("\n")[0];
+                var pass = team_is_pass[tname];
+                if (isDomestic) {
+                    if (pass > 0) {
+                        e.style.backgroundColor = "#e3fae3";
+                    } else {
+                        e.style.backgroundColor = "";
                     }
-                } else {
-                    e.style.backgroundColor = "";
                 }
+                a.innerText = uname + "[" + team_rank[tname] + "/" + univ_count[uname] + "]";
             }
         }).catch(_e => {
             // setTimeout(regional, 3000);

@@ -230,5 +230,29 @@
             "@mizuyoucan_",
             "@Re_take911"
         ]
+    },
+    "Girigiri_yellows": {
+        "team_rating": 2365,
+        "members": [
+            "<span class=\"user-yellow\">kuhaku</span>",
+            "<span class=\"user-yellow\">Pro_ktmr</span>",
+            "<span class=\"user-yellow\">KowerKoint</span>"
+        ]
+    },
+    "raKUhoKU": {
+        "team_rating": 2207,
+        "members": [
+            "<span class=\"user-yellow\">MTGS</span>",
+            "<span class=\"user-green\">estis</span>",
+            "<span class=\"user-cyan\">putcho</span>"
+        ]
+    },
+    "MSB": {
+        "team_rating": 2283,
+        "members": [
+            "<span class=\"user-yellow\">m_tsubasa</span>",
+            "<span class=\"user-yellow\">suzuken_w</span>",
+            "<span class=\"user-yellow\">bayashiko</span>"
+        ]
     }
 }

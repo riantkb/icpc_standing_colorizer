@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         ICPC Japan Standings Colorizer
 // @namespace    https://github.com/riantkb/icpc_standing_colorizer
-// @version      0.5.3
+// @version      0.5.4
 // @description  ICPC Japan Standings Colorizer
 // @author       riantkb
 // @match        http://www.yamagula.ic.i.u-tokyo.ac.jp/*/standings.html
@@ -199,8 +199,14 @@ function domestic() {
 }
 
 
-function firebaseapp(isDomestic) {
+function firebaseapp() {
     // console.log("regional");
+    var isDomestic = false;
+    var header = document.querySelector("a.navbar-brand");
+    if (header != null && (header.innerText.match(/国内予選/) != null || header.innerText.match(/domestic/i) != null)) {
+        isDomestic = true;
+    }
+
     var lines0 = document.querySelectorAll("div.team-col.team-name");
     for (const e of lines0) {
         if (e == null) continue;
@@ -223,7 +229,7 @@ function firebaseapp(isDomestic) {
                     // var team_rating = convertFromRatingToSpan(team_dic[tname]['team_rating'])
                     var circle = generateTopcoderLikeCircle(team_dic[tname]['team_rating'])
                     var circle_span = `<span class='tooltip1'>${circle}<div class='description1'>${team_dic[tname]['team_rating']}</div></span>`;
-                    h = h.replace(tname, `${circle_span} ${tname}<br><span>${team_dic[tname]['members'].join(', ')}</span>`);
+                    h = h.replace(tname, `${circle_span} ${tname}<br><small>${team_dic[tname]['members'].join(', ')}</small>`);
                     e.innerHTML = h
                 }
             }
@@ -284,7 +290,7 @@ function main() {
     }
     else if (url.match(/icpcsec.firebaseapp.com\/standings/) != null) {
         // regional();
-        firebaseapp(true);
+        firebaseapp();
     }
     else {
         // console.log("no match url");

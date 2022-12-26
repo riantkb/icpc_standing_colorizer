@@ -7,7 +7,7 @@ on:
     - cron:  '0 */3 * * *'
   # push:
   #   branches: [ master ]
-  # workflow_dispatch:
+  workflow_dispatch:
 
 jobs:
   update_and_push:

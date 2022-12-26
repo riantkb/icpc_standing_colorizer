@@ -1,14 +1,14 @@
 {
     "TUTankhamun": {
-        "team_rating": 1995,
+        "team_rating": 2041,
         "members": [
-            "<span class=\"user-blue\">ecasdqina</span>",
+            "<span class=\"user-yellow\">ecasdqina</span>",
             "<span class=\"user-green\">hals</span>",
             "<span class=\"user-cyan\">MATSUMAT</span>"
         ]
     },
     "tonosama": {
-        "team_rating": 3334,
+        "team_rating": 3349,
         "members": [
             "<span><img src=\"https://img.atcoder.jp/assets/icon/crown_bronze.png\"/><span class=\"user-red\">noshi91</span></span>",
             "<span><img src=\"https://img.atcoder.jp/assets/icon/crown_silver.png\"/><span style=\"color:#FF6040;\">tatyam</span></span>",
@@ -16,7 +16,7 @@
         ]
     },
     "Imperishable": {
-        "team_rating": 2188,
+        "team_rating": 2182,
         "members": [
             "<span class=\"user-blue\">Imperi</span>",
             "<span class=\"user-yellow\">ebi_fly</span>",
@@ -24,7 +24,7 @@
         ]
     },
     "DELIAIR": {
-        "team_rating": 2824,
+        "team_rating": 2827,
         "members": [
             "<span class=\"user-orange\">torisasami</span>",
             "<span class=\"user-orange\">tokusakurai</span>",
@@ -32,7 +32,7 @@
         ]
     },
     "KUB1pp": {
-        "team_rating": 2962,
+        "team_rating": 2970,
         "members": [
             "<span class=\"user-red\">cn449</span>",
             "<span class=\"user-orange\">sheyasutaka</span>",
@@ -48,7 +48,7 @@
         ]
     },
     "Chordal_Ring": {
-        "team_rating": 2013,
+        "team_rating": 2051,
         "members": [
             "<span class=\"user-blue\">shinchan</span>",
             "<span class=\"user-blue\">asdf1</span>",
@@ -64,7 +64,7 @@
         ]
     },
     "may0nacat": {
-        "team_rating": 2350,
+        "team_rating": 2345,
         "members": [
             "<span class=\"user-yellow\">mencotton</span>",
             "<span class=\"user-yellow\">zer0star</span>",
@@ -72,7 +72,7 @@
         ]
     },
     "suzukaze_Aobayama": {
-        "team_rating": 2452,
+        "team_rating": 2446,
         "members": [
             "<span class=\"user-yellow\">sotanishy</span>",
             "<span class=\"user-yellow\">karinohito</span>",
@@ -80,15 +80,15 @@
         ]
     },
     "Give us sociability": {
-        "team_rating": 2488,
+        "team_rating": 2495,
         "members": [
-            "<span class=\"user-blue\">KKT89</span>",
+            "<span class=\"user-yellow\">KKT89</span>",
             "<span class=\"user-yellow\">Hyado</span>",
             "<span class=\"user-orange\">hotman78</span>"
         ]
     },
     "SOS Brigade": {
-        "team_rating": 2149,
+        "team_rating": 2145,
         "members": [
             "<span class=\"user-cyan\">season</span>",
             "<span class=\"user-blue\">otoshigo</span>",
@@ -96,7 +96,7 @@
         ]
     },
     "nowcow": {
-        "team_rating": 2564,
+        "team_rating": 2517,
         "members": [
             "<span class=\"user-orange\">olphe</span>",
             "<span class=\"user-yellow\">nrvft</span>",
@@ -104,7 +104,7 @@
         ]
     },
     "Kidamari Sketch": {
-        "team_rating": 2276,
+        "team_rating": 2285,
         "members": [
             "<span class=\"user-yellow\">phocom</span>",
             "<span class=\"user-yellow\">t98slider</span>",
@@ -112,7 +112,7 @@
         ]
     },
     "lower_YBC": {
-        "team_rating": 2124,
+        "team_rating": 2132,
         "members": [
             "<span class=\"user-yellow\">tyawanmusi</span>",
             "<span class=\"user-blue\">dyktr_06</span>",
@@ -120,11 +120,11 @@
         ]
     },
     "SPJ": {
-        "team_rating": 2795,
+        "team_rating": 2799,
         "members": [
             "<span class=\"user-orange\">Kite_kuma</span>",
             "<span class=\"user-yellow\">nok0</span>",
-            "<span class=\"user-yellow\">zkou</span>"
+            "<span class=\"user-orange\">zkou</span>"
         ]
     },
     "haunting": {
@@ -136,7 +136,7 @@
         ]
     },
     "Aobayama_dropout": {
-        "team_rating": 2883,
+        "team_rating": 2876,
         "members": [
             "<span><img src=\"https://img.atcoder.jp/assets/icon/crown_bronze.png\"/><span class=\"user-red\">kotatsugame</span></span>",
             "<span class=\"user-blue\">ha15</span>",
@@ -152,7 +152,7 @@
         ]
     },
     "YUPC": {
-        "team_rating": 2022,
+        "team_rating": 2020,
         "members": [
             "<span class=\"user-yellow\">myau</span>",
             "<span class=\"user-cyan\">hashimoto76</span>",
@@ -160,7 +160,7 @@
         ]
     },
     "KOMOREBI": {
-        "team_rating": 3088,
+        "team_rating": 3068,
         "members": [
             "<span><img src=\"https://img.atcoder.jp/assets/icon/crown_bronze.png\"/><span class=\"user-red\">noimi</span></span>",
             "<span class=\"user-orange\">jell</span>",
@@ -187,12 +187,12 @@
         "team_rating": 1851,
         "members": [
             "<span class=\"user-cyan\">ecto0310</span>",
-            "@fenger0126",
-            "<span class=\"user-blue\">Kyo_s_s</span>"
+            "<span class=\"user-blue\">Kyo_s_s</span>",
+            ""
         ]
     },
     "NP_komplete": {
-        "team_rating": 1750,
+        "team_rating": 1731,
         "members": [
             "pro_anyone",
             "<span class=\"user-blue\">arad</span>",
@@ -200,7 +200,7 @@
         ]
     },
     "Bu-Bu-Du-Ke": {
-        "team_rating": 2541,
+        "team_rating": 2545,
         "members": [
             "<span class=\"user-orange\">suisen</span>",
             "<span class=\"user-yellow\">otera</span>",
@@ -216,7 +216,7 @@
         ]
     },
     "oriKoU3": {
-        "team_rating": 2177,
+        "team_rating": 2174,
         "members": [
             "<span class=\"user-yellow\">naniwazu</span>",
             "<span class=\"user-blue\">Capo</span>",
@@ -224,7 +224,7 @@
         ]
     },
     "Citrus taker": {
-        "team_rating": 1815,
+        "team_rating": 1781,
         "members": [
             "<span class=\"user-blue\">chomonolis</span>",
             "mizuyoucan_",
@@ -232,7 +232,7 @@
         ]
     },
     "Girigiri_yellows": {
-        "team_rating": 2378,
+        "team_rating": 2376,
         "members": [
             "<span class=\"user-yellow\">kuhaku</span>",
             "<span class=\"user-yellow\">Pro_ktmr</span>",
@@ -240,7 +240,7 @@
         ]
     },
     "raKUhoKU": {
-        "team_rating": 2232,
+        "team_rating": 2149,
         "members": [
             "<span class=\"user-yellow\">MTGS</span>",
             "<span class=\"user-green\">estis</span>",
@@ -272,7 +272,7 @@
         ]
     },
     "diJKstra": {
-        "team_rating": 1944,
+        "team_rating": 1932,
         "members": [
             "<span class=\"user-blue\">Daylight</span>",
             "<span class=\"user-cyan\">littlegirl112</span>",
@@ -288,15 +288,15 @@
         ]
     },
     "Anya AC Suki": {
-        "team_rating": 1601,
+        "team_rating": 1587,
         "members": [
             "<span class=\"user-cyan\">Herring101</span>",
             "<span class=\"user-cyan\">hiro71687</span>",
-            "<span class=\"user-green\">Gandalfr</span>"
+            "<span class=\"user-cyan\">Gandalfr</span>"
         ]
     },
     "Go2Heaven": {
-        "team_rating": 1811,
+        "team_rating": 1798,
         "members": [
             "<span class=\"user-green\">Nanashima</span>",
             "<span class=\"user-blue\">Pech1</span>",
@@ -312,7 +312,7 @@
         ]
     },
     "FUNCoder": {
-        "team_rating": 1866,
+        "team_rating": 1852,
         "members": [
             "<span class=\"user-blue\">ttkkggww</span>",
             "<span class=\"user-cyan\">ryusuke_h</span>",
@@ -320,7 +320,7 @@
         ]
     },
     "The Raspberry Candies": {
-        "team_rating": 2903,
+        "team_rating": 2908,
         "members": [
             "<span class=\"user-orange\">chinerist</span>",
             "<span class=\"user-orange\">rniya</span>",
@@ -344,7 +344,7 @@
         ]
     },
     "oraCle_MaChine": {
-        "team_rating": 2716,
+        "team_rating": 2720,
         "members": [
             "<span class=\"user-orange\">cuthbert</span>",
             "<span class=\"user-orange\">Motsu_xe</span>",
@@ -352,7 +352,7 @@
         ]
     },
     "CTRL-F": {
-        "team_rating": 1221,
+        "team_rating": 1229,
         "members": [
             "<span class=\"user-brown\">nobuchi</span>",
             "<span class=\"user-green\">Higurashi</span>",
@@ -360,7 +360,7 @@
         ]
     },
     "Anrirled": {
-        "team_rating": 2822,
+        "team_rating": 2803,
         "members": [
             "<span class=\"user-orange\">SPD_9X2</span>",
             "<span class=\"user-yellow\">maze1230</span>",
@@ -384,7 +384,7 @@
         ]
     },
     "BiWACoder": {
-        "team_rating": 1848,
+        "team_rating": 1861,
         "members": [
             "<span class=\"user-green\">Rute</span>",
             "<span class=\"user-blue\">komite</span>",
@@ -392,7 +392,7 @@
         ]
     },
     "flow-chow": {
-        "team_rating": 1971,
+        "team_rating": 1952,
         "members": [
             "<span class=\"user-blue\">kacho65535</span>",
             "<span class=\"user-blue\">nu50218</span>",

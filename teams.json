@@ -16,7 +16,7 @@
         ]
     },
     "Imperishable": {
-        "team_rating": 2182,
+        "team_rating": 2188,
         "members": [
             "<span class=\"user-blue\">Imperi</span>",
             "<span class=\"user-yellow\">ebi_fly</span>",
@@ -34,7 +34,7 @@
     "KUB1pp": {
         "team_rating": 2970,
         "members": [
-            "<span class=\"user-red\">cn449</span>",
+            "<span><img src=\"https://img.atcoder.jp/assets/icon/crown_bronze.png\"/><span class=\"user-red\">cn449</span></span>",
             "<span class=\"user-orange\">sheyasutaka</span>",
             "<span class=\"user-orange\">physics0523</span>"
         ]
@@ -48,7 +48,7 @@
         ]
     },
     "Chordal_Ring": {
-        "team_rating": 2051,
+        "team_rating": 2054,
         "members": [
             "<span class=\"user-blue\">shinchan</span>",
             "<span class=\"user-blue\">asdf1</span>",

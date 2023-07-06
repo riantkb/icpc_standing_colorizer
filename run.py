@@ -203,6 +203,7 @@ $(document).ready(function() {
 <body>
 <p>This information is from <a href="%s">%s</a> (Last Update: %s).</p>
 <p>The team ratings are calculated based on <a href="https://codeforces.com/blog/entry/16986">https://codeforces.com/blog/entry/16986</a>.</p>
+<p>GitHub: <a href="https://github.com/riantkb/icpc_standing_colorizer">https://github.com/riantkb/icpc_standing_colorizer</a></p>
 <p><b>情報の真偽に対する一切の責任を負いません</b></p>
 <p>Past years: %s</p>
 %s

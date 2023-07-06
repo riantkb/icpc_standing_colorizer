@@ -230,5 +230,21 @@
             "<span class=\"user-cyan\">ramdos</span>",
             "<span class=\"user-unrated\">cp20</span>"
         ]
+    },
+    "tonosama": {
+        "team_rating": 3212,
+        "members": [
+            "<span><img src=\"https://img.atcoder.jp/assets/icon/crown_bronze.png\"/><span class=\"user-red\">noshi91</span></span>",
+            "<span class=\"user-orange\">Hemimor</span>",
+            "<span><img src=\"https://img.atcoder.jp/assets/icon/crown_bronze.png\"/><span class=\"user-red\">potato167</span></span>"
+        ]
+    },
+    "Aobayama_doctors": {
+        "team_rating": 2488,
+        "members": [
+            "<span class=\"user-orange\">toam</span>",
+            "<span class=\"user-yellow\">Dispersion</span>",
+            "<span class=\"user-blue\">mannbou</span>"
+        ]
     }
 }

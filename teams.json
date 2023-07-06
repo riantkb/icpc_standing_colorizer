@@ -222,5 +222,13 @@
             "In",
             "<span class=\"user-unrated\">reindeerUEC</span>"
         ]
+    },
+    "mugenloop": {
+        "team_rating": 1473,
+        "members": [
+            "<span class=\"user-cyan\">pippi0057</span>",
+            "<span class=\"user-cyan\">ramdos</span>",
+            "<span class=\"user-unrated\">cp20</span>"
+        ]
     }
 }

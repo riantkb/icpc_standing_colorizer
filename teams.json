@@ -438,5 +438,29 @@
             "<span class=\"user-blue\">pitsu</span>",
             "<span class=\"user-blue\">tardigrade</span>"
         ]
+    },
+    "Algorilla": {
+        "team_rating": 2021,
+        "members": [
+            "<span class=\"user-blue\">Capo</span>",
+            "<span class=\"user-cyan\">yukihira_pot</span>",
+            "<span class=\"user-blue\">AEn</span>"
+        ]
+    },
+    "Meisaburo": {
+        "team_rating": 234,
+        "members": [
+            "<span class=\"user-unrated\">KASU</span>",
+            "cc",
+            "dorimiamn"
+        ]
+    },
+    "its_unintended_penalty": {
+        "team_rating": 973,
+        "members": [
+            "<span class=\"user-brown\">Ayutaso</span>",
+            "<span class=\"user-green\">Harui</span>",
+            "\u592d\u901d\u738b"
+        ]
     }
 }

@@ -3,8 +3,8 @@
 
 name: Python application
 on:
-  schedule:
-    - cron:  '0 * * * *'
+  # schedule:
+  #   - cron:  '0 * * * *'
   # push:
   #   branches: [ master ]
   workflow_dispatch:

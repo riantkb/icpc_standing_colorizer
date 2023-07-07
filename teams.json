@@ -246,5 +246,21 @@
             "<span class=\"user-yellow\">Dispersion</span>",
             "<span class=\"user-blue\">mannbou</span>"
         ]
+    },
+    "MuscleFlow": {
+        "team_rating": 2078,
+        "members": [
+            "<span class=\"user-yellow\">nu50218</span>",
+            "<span class=\"user-cyan\">NokonoKotlin</span>",
+            "<span class=\"user-cyan\">kacho65535</span>"
+        ]
+    },
+    "Citrusing": {
+        "team_rating": 2241,
+        "members": [
+            "<span class=\"user-yellow\">Mitsubachi</span>",
+            "<span class=\"user-yellow\">Mitarushi</span>",
+            "<span class=\"user-cyan\">Sashiming</span>"
+        ]
     }
 }

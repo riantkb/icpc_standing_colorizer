@@ -312,10 +312,10 @@
         ]
     },
     "chocolate_party": {
-        "team_rating": 1710,
+        "team_rating": 1697,
         "members": [
             "<span class=\"user-blue\">idat_50me</span>",
-            "<span class=\"user-green\">Gex777</span>",
+            "Hfy888",
             "<span class=\"user-green\">imaimai_frog</span>"
         ]
     },
@@ -397,6 +397,46 @@
             "<span class=\"user-yellow\">niuez</span>",
             "<span class=\"user-yellow\">pointN</span>",
             "<span class=\"user-yellow\">ruthen71</span>"
+        ]
+    },
+    "Nafmotanmofmof": {
+        "team_rating": 1644,
+        "members": [
+            "<span class=\"user-green\">Nafmo2</span>",
+            "<span class=\"user-blue\">Lafolia</span>",
+            "<span class=\"user-green\">hikikomori</span>"
+        ]
+    },
+    "Bocchi The Tech": {
+        "team_rating": 2659,
+        "members": [
+            "<span class=\"user-orange\">simasima</span>",
+            "<span class=\"user-yellow\">Series_205</span>",
+            "<span class=\"user-yellow\">ponjuice</span>"
+        ]
+    },
+    "The Raspberry Candies": {
+        "team_rating": 2933,
+        "members": [
+            "<span class=\"user-orange\">chinerist</span>",
+            "<span class=\"user-orange\">rniya</span>",
+            "<span class=\"user-orange\">tabr</span>"
+        ]
+    },
+    "0-t1ps": {
+        "team_rating": 738,
+        "members": [
+            "<span class=\"user-brown\">YTa09</span>",
+            "\u30c1\u30e3\u30fc\u30cf\u30f3\u304a\u3044\u3057\u3044\u541b",
+            "\u304f\u3061\u3071\u3063\u3061"
+        ]
+    },
+    "tatitsu": {
+        "team_rating": 2232,
+        "members": [
+            "<span class=\"user-yellow\">itigo</span>",
+            "<span class=\"user-blue\">pitsu</span>",
+            "<span class=\"user-blue\">tardigrade</span>"
         ]
     }
 }

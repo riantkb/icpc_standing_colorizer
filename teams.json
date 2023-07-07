@@ -262,5 +262,77 @@
             "<span class=\"user-yellow\">Mitarushi</span>",
             "<span class=\"user-cyan\">Sashiming</span>"
         ]
+    },
+    "sankaKsu": {
+        "team_rating": 785,
+        "members": [
+            "log_K",
+            "<span class=\"user-brown\">sunrize</span>",
+            "<span class=\"user-brown\">Sakasu</span>"
+        ]
+    },
+    "kebab to code conversion": {
+        "team_rating": 1299,
+        "members": [
+            "<span class=\"user-cyan\">nikoro256</span>",
+            "<span class=\"user-brown\">tontiru</span>",
+            "<span class=\"user-gray\">trkwm</span>"
+        ]
+    },
+    "Codestroyer": {
+        "team_rating": 1636,
+        "members": [
+            "<span class=\"user-cyan\">Noela</span>",
+            "<span class=\"user-cyan\">Ryoga_exe</span>",
+            "<span class=\"user-brown\">mkv</span>"
+        ]
+    },
+    "FUNCoder": {
+        "team_rating": 2145,
+        "members": [
+            "<span class=\"user-blue\">ttkkggww</span>",
+            "<span class=\"user-cyan\">ryusuke_h</span>",
+            "<span class=\"user-yellow\">FUN_Morikubo</span>"
+        ]
+    },
+    "Algorithmical": {
+        "team_rating": 2154,
+        "members": [
+            "<span class=\"user-green\">makaserori</span>",
+            "<span class=\"user-yellow\">sounansya</span>",
+            "<span class=\"user-cyan\">ryu150</span>"
+        ]
+    },
+    "rnn": {
+        "team_rating": 1731,
+        "members": [
+            "<span class=\"user-blue\">ripity</span>",
+            "<span class=\"user-unrated\">nonon</span>",
+            "<span class=\"user-cyan\">neko0774</span>"
+        ]
+    },
+    "chocolate_party": {
+        "team_rating": 1710,
+        "members": [
+            "<span class=\"user-blue\">idat_50me</span>",
+            "<span class=\"user-green\">Gex777</span>",
+            "<span class=\"user-green\">imaimai_frog</span>"
+        ]
+    },
+    "velocity": {
+        "team_rating": 1792,
+        "members": [
+            "<span class=\"user-blue\">Pech1</span>",
+            "<span class=\"user-blue\">harurun</span>",
+            "<span class=\"user-green\">Eringi5296</span>"
+        ]
+    },
+    "Type-C": {
+        "team_rating": 2046,
+        "members": [
+            "<span class=\"user-yellow\">stoq</span>",
+            "<span class=\"user-unrated\">HIRYU</span>",
+            "<span class=\"user-green\">WiIIiam</span>"
+        ]
     }
 }

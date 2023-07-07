@@ -366,5 +366,37 @@
             "<span class=\"user-cyan\">Arumakan1727</span>",
             "<span class=\"user-cyan\">piddy</span>"
         ]
+    },
+    "OSK": {
+        "team_rating": 2035,
+        "members": [
+            "<span class=\"user-yellow\">hexa0611</span>",
+            "<span class=\"user-cyan\">pres1dent</span>",
+            "<span class=\"user-green\">ja14378</span>"
+        ]
+    },
+    "triC_Hino": {
+        "team_rating": 1724,
+        "members": [
+            "<span class=\"user-blue\">kya</span>",
+            "<span class=\"user-green\">nattonato</span>",
+            "<span class=\"user-cyan\">igeee</span>"
+        ]
+    },
+    "Restriction Busters": {
+        "team_rating": 2256,
+        "members": [
+            "<span class=\"user-yellow\">Rho17</span>",
+            "<span class=\"user-yellow\">Thistle</span>",
+            "<span class=\"user-blue\">serendipity_</span>"
+        ]
+    },
+    "Big O of N cubed": {
+        "team_rating": 2262,
+        "members": [
+            "<span class=\"user-yellow\">niuez</span>",
+            "<span class=\"user-yellow\">pointN</span>",
+            "<span class=\"user-yellow\">ruthen71</span>"
+        ]
     }
 }

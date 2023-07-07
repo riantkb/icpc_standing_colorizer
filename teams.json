@@ -72,10 +72,10 @@
         ]
     },
     "Magical Fish": {
-        "team_rating": 2174,
+        "team_rating": 2279,
         "members": [
             "<span class=\"user-yellow\">magsta</span>",
-            "miscalc",
+            "<span class=\"user-yellow\">miscalculation53</span>",
             "<span class=\"user-yellow\">confeito</span>"
         ]
     },
@@ -333,6 +333,38 @@
             "<span class=\"user-yellow\">stoq</span>",
             "<span class=\"user-unrated\">HIRYU</span>",
             "<span class=\"user-green\">WiIIiam</span>"
+        ]
+    },
+    "LuzhiledFanClub": {
+        "team_rating": 1952,
+        "members": [
+            "<span class=\"user-blue\">Abeshi2002</span>",
+            "<span class=\"user-blue\">nono00</span>",
+            "<span class=\"user-blue\">zawatin</span>"
+        ]
+    },
+    "Red Phobia": {
+        "team_rating": 2401,
+        "members": [
+            "<span class=\"user-yellow\">naniwazu</span>",
+            "<span class=\"user-yellow\">TKO</span>",
+            "<span class=\"user-yellow\">yuma220284</span>"
+        ]
+    },
+    "hot-k-k1": {
+        "team_rating": 2425,
+        "members": [
+            "<span class=\"user-orange\">hotman78</span>",
+            "<span class=\"user-cyan\">krps</span>",
+            "<span class=\"user-blue\">k1suxu</span>"
+        ]
+    },
+    "rHAPsody": {
+        "team_rating": 1967,
+        "members": [
+            "<span class=\"user-blue\">houren</span>",
+            "<span class=\"user-cyan\">Arumakan1727</span>",
+            "<span class=\"user-cyan\">piddy</span>"
         ]
     }
 }

@@ -462,5 +462,13 @@
             "<span class=\"user-green\">Harui</span>",
             "\u592d\u901d\u738b"
         ]
+    },
+    "KITKAT": {
+        "team_rating": 1262,
+        "members": [
+            "<span class=\"user-green\">n0ma_ru</span>",
+            "<span class=\"user-green\">soumat</span>",
+            "<span class=\"user-green\">tenagazaru</span>"
+        ]
     }
 }

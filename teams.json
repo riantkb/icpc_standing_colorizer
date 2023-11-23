@@ -264,9 +264,9 @@
         ]
     },
     "sankaKsu": {
-        "team_rating": 972,
+        "team_rating": 1779,
         "members": [
-            "log_K",
+            "<span class=\"user-blue\">lX57</span>",
             "<span class=\"user-green\">sunrize</span>",
             "<span class=\"user-brown\">Sakasu</span>"
         ]
@@ -477,6 +477,22 @@
             "<span class=\"user-orange\">cn449</span>",
             "<span class=\"user-orange\">sheyasutaka</span>",
             "<span class=\"user-orange\">physics0523</span>"
+        ]
+    },
+    "GenshinStartKleePlayer": {
+        "team_rating": 2050,
+        "members": [
+            "<span class=\"user-yellow\">JiKuai</span>",
+            "<span class=\"user-cyan\">lemonilemon</span>",
+            "<span class=\"user-cyan\">yungyao</span>"
+        ]
+    },
+    "PCkomachi": {
+        "team_rating": 2293,
+        "members": [
+            "<span class=\"user-yellow\">Fysty</span>",
+            "<span class=\"user-yellow\">amano_hina</span>",
+            "<span class=\"user-yellow\">PixelCat</span>"
         ]
     }
 }

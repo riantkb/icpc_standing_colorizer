@@ -23,6 +23,11 @@ pickle_atcoder = {}
 if os.path.isfile(pickle_path):
     with open(pickle_path, "rb") as f:
         pickle_atcoder = pickle.load(f)
+        pickle_atcoder = {
+            k: v
+            for k, v in pickle_atcoder.items()
+            if datetime.datetime.now() - v["datetime"] < datetime.timedelta(days=1)
+        }
 
 
 def convert_from_rating_to_span(rating: int):
@@ -47,10 +52,7 @@ def convert_from_rating_to_span(rating: int):
 
 
 def fetch_user_page(ulink: str):
-    if ulink in pickle_atcoder and datetime.datetime.now() - pickle_atcoder[ulink]["datetime"] < datetime.timedelta(
-        days=1
-    ):
-        # print(f"pickle loaded    link: {ulink}", file=sys.stderr)
+    if ulink in pickle_atcoder:
         response = pickle_atcoder[ulink]["response"]
     else:
         time.sleep(1)
@@ -87,7 +89,7 @@ def get_user_rate(username: str):
     if len(df) < 2:
         # unrated user
         return 0
-    rating = df[1][df[1][0] == "Rating"].iloc[0, 1]
+    rating = str(df[1][df[1][0] == "Rating"].iloc[0, 1])
     if "(Provisional)" in rating:
         rating = rating.replace("(Provisional)", "").replace(" ", "")
     return int(rating)
@@ -118,6 +120,8 @@ def get_user_span(username: str, enable_link: bool):
 
     soup = BeautifulSoup(response.text, "html.parser")
     uinfo = soup.select_one("a.username")
+    assert uinfo is not None
+    assert uinfo.previous_sibling is not None
     icon = str(uinfo.previous_sibling.previous_sibling)
     if "//img.atcoder.jp/assets/icon/crown_" in icon:
         icon = icon.replace("//img.atcoder.jp/assets/icon/crown_", "https://img.atcoder.jp/assets/icon/crown_") + " "

@@ -494,5 +494,21 @@
             "<span class=\"user-yellow\">amano_hina</span>",
             "<span class=\"user-yellow\">PixelCat</span>"
         ]
+    },
+    "-O3": {
+        "team_rating": 1741,
+        "members": [
+            "<span class=\"user-blue\">take000</span>",
+            "<span class=\"user-cyan\">misonikomipan</span>",
+            "<span class=\"user-green\">ShomaA</span>"
+        ]
+    },
+    "elephant_spaghetti": {
+        "team_rating": 2038,
+        "members": [
+            "<span class=\"user-blue\">yasagureprog</span>",
+            "<span class=\"user-blue\">ococonomy1</span>",
+            "<span class=\"user-blue\">usatyo</span>"
+        ]
     }
 }

@@ -480,10 +480,10 @@
         ]
     },
     "GenshinStartKleePlayer": {
-        "team_rating": 2050,
+        "team_rating": 2049,
         "members": [
             "<span class=\"user-yellow\">JiKuai</span>",
-            "<span class=\"user-cyan\">lemonilemon</span>",
+            "<span class=\"user-green\">lemonilemon</span>",
             "<span class=\"user-cyan\">yungyao</span>"
         ]
     },

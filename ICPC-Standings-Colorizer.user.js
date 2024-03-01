@@ -1,12 +1,13 @@
 // ==UserScript==
 // @name         ICPC Japan Standings Colorizer
 // @namespace    https://github.com/riantkb/icpc_standing_colorizer
-// @version      0.6.0
+// @version      0.6.1
 // @description  ICPC Japan Standings Colorizer
 // @author       riantkb
 // @match        http://www.yamagula.ic.i.u-tokyo.ac.jp/*/standings.html
 // @match        https://icpc.iisf.or.jp/past-icpc/*/common/guest_standings_ja.php.html
 // @match        https://icpcsec.firebaseapp.com/*
+// @match        https://icpcasia.firebaseapp.com/*
 // @grant        GM_getResourceText
 // @grant        GM_addStyle
 // @resource     style.css https://raw.githubusercontent.com/riantkb/icpc_standing_colorizer/master/tampermonkey_script.css
@@ -292,7 +293,7 @@ function main() {
   const url = window.location.href;
   if (url.includes("yamagula.ic.i.u-tokyo.ac.jp") || url.includes("icpc.iisf.or.jp/past-icpc")) {
     domestic();
-  } else if (url.includes("icpcsec.firebaseapp.com/standings")) {
+  } else if (url.includes("firebaseapp.com/standings")) {
     // regional();
     firebaseapp();
   } else {

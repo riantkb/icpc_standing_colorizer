@@ -55,7 +55,7 @@ def fetch_user_page(ulink: str):
     if ulink in pickle_atcoder:
         response = pickle_atcoder[ulink]["response"]
     else:
-        time.sleep(1)
+        time.sleep(3)
         response = requests.get(ulink)
         if response.status_code == requests.codes.ok or response.status_code == requests.codes.not_found:
             pickle_atcoder[ulink] = {"response": response, "datetime": datetime.datetime.now()}
@@ -146,7 +146,9 @@ df = pd.read_html(url)[1].fillna("")[5:].reset_index(drop=True)
 df = df.rename(columns={"メンバー 1": "メンバー1", "コーチ，ココーチ": "コーチ"})
 user_columns = ("メンバー1", "メンバー2", "メンバー3", "コーチ")
 df["チームレート"] = 0
-df = df.reindex(columns=["チーム名", "学校名", "チームレート", "メンバー1", "メンバー2", "メンバー3", "コーチ", "ひとこと等"])
+df = df.reindex(
+    columns=["チーム名", "学校名", "チームレート", "メンバー1", "メンバー2", "メンバー3", "コーチ", "ひとこと等"]
+)
 for c in ("チーム名", "学校名", "メンバー1", "メンバー2", "メンバー3", "コーチ", "ひとこと等"):
     df[c] = df[c].map(html.escape)
 
@@ -167,7 +169,9 @@ for i in range(len(df)):
     df.loc[df.index[i], "チームレート"] = convert_from_rating_to_span(team_rating)
     res_dict[df["チーム名"][i]] = {"team_rating": team_rating, "members": members}
 
-df = df.reindex(columns=["チーム名", "学校名", "チームレート", "メンバー1", "メンバー2", "メンバー3", "コーチ", "ひとこと等"])
+df = df.reindex(
+    columns=["チーム名", "学校名", "チームレート", "メンバー1", "メンバー2", "メンバー3", "コーチ", "ひとこと等"]
+)
 
 df_html = df.to_html(escape=False)
 

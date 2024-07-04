@@ -11,7 +11,7 @@ import pickle
 import rating_utils
 
 
-YEAR = 2023
+YEAR = 2024
 YEAR_BEGIN = 2021
 
 
@@ -55,7 +55,7 @@ def fetch_user_page(ulink: str):
     if ulink in pickle_atcoder:
         response = pickle_atcoder[ulink]["response"]
     else:
-        time.sleep(3)
+        time.sleep(2)
         response = requests.get(ulink)
         if response.status_code == requests.codes.ok or response.status_code == requests.codes.not_found:
             pickle_atcoder[ulink] = {"response": response, "datetime": datetime.datetime.now()}

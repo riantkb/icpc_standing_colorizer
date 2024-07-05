@@ -350,5 +350,61 @@
             "<span class=\"user-orange\">sheyasutaka</span>",
             "<span class=\"user-orange\">physics0523</span>"
         ]
+    },
+    "Love Jiro": {
+        "team_rating": 1022,
+        "members": [
+            "<span class=\"user-green\">tossy2002</span>",
+            "<span class=\"user-gray\">kei0101xw</span>",
+            "<span class=\"user-gray\">floatzel</span>"
+        ]
+    },
+    "Br0wn_SHarks": {
+        "team_rating": 1277,
+        "members": [
+            "<span class=\"user-green\">shojusen</span>",
+            "<span class=\"user-cyan\">yuyuyu</span>",
+            "hisagi"
+        ]
+    },
+    "Uriboys": {
+        "team_rating": 2055,
+        "members": [
+            "<span class=\"user-yellow\">Shirotsume</span>",
+            "<span class=\"user-cyan\">fky_</span>",
+            "<span class=\"user-cyan\">tmb</span>"
+        ]
+    },
+    "HuMaN": {
+        "team_rating": 1939,
+        "members": [
+            "<span class=\"user-blue\">houren</span>",
+            "",
+            ""
+        ]
+    },
+    "SST": {
+        "team_rating": 1438,
+        "members": [
+            "<span class=\"user-cyan\">sunrize</span>",
+            "<span class=\"user-unrated\">shima</span>",
+            "<span class=\"user-cyan\">toufu24</span>"
+        ]
+    },
+    "kinomi": {
+        "team_rating": 1356,
+        "members": [
+            "<span class=\"user-green\">ojizosan</span>",
+            "<span class=\"user-cyan\">klno</span>",
+            "<span class=\"user-green\">Mikan04y</span>"
+        ]
+    },
+    "GGH": {
+        "team_rating": 1313,
+        "members": [
+            "<span class=\"user-green\">Hikari30</span>",
+            "<span class=\"user-green\">mkreem</span>",
+            "<span class=\"user-green\">alfons</span>"
+        ]
     }
 }

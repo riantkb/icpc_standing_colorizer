@@ -614,5 +614,13 @@
             "<span class=\"user-cyan\">dogo</span>",
             "<span class=\"user-green\">Nanashima</span>"
         ]
+    },
+    "Taihohmaru": {
+        "team_rating": 1408,
+        "members": [
+            "<span class=\"user-unrated\">maromayu</span>",
+            "<span class=\"user-unrated\">hokaze</span>",
+            "<span class=\"user-cyan\">ramdos</span>"
+        ]
     }
 }

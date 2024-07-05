@@ -15,7 +15,7 @@
             "<span class=\"user-blue\">littlegirl112</span>"
         ]
     },
-    "I Eat Shika-Senbei": {
+    "IEatShika-Senbei": {
         "team_rating": 1771,
         "members": [
             "<span class=\"user-cyan\">take000</span>",
@@ -31,7 +31,7 @@
             "<span class=\"user-green\">Satoooon</span>"
         ]
     },
-    "query conqueror": {
+    "queryconqueror": {
         "team_rating": 1863,
         "members": [
             "<span class=\"user-blue\">RiRinbaru</span>",
@@ -47,7 +47,7 @@
             "<span class=\"user-cyan\">powell</span>"
         ]
     },
-    "Magical Fish": {
+    "MagicalFish": {
         "team_rating": 2254,
         "members": [
             "<span class=\"user-yellow\">confeito</span>",
@@ -71,7 +71,7 @@
             "<span class=\"user-cyan\">ecto0310</span>"
         ]
     },
-    "Magic Strijk": {
+    "MagicStrijk": {
         "team_rating": 2538,
         "members": [
             "<span class=\"user-yellow\">eijirou</span>",
@@ -151,7 +151,7 @@
             "<span class=\"user-unrated\">anonymous</span>"
         ]
     },
-    "Bocchi The Tech": {
+    "BocchiTheTech": {
         "team_rating": 2941,
         "members": [
             "<span><img src=\"https://img.atcoder.jp/assets/icon/crown_bronze.png\"/><span class=\"user-red\">simasima</span></span>",
@@ -159,7 +159,7 @@
             "<span class=\"user-yellow\">Series_205</span>"
         ]
     },
-    "Yagami_KO - copy": {
+    "Yagami_KO-copy": {
         "team_rating": 2155,
         "members": [
             "<span class=\"user-yellow\">arad</span>",
@@ -319,7 +319,7 @@
             "ZOI_dayo"
         ]
     },
-    "Red Phobia": {
+    "RedPhobia": {
         "team_rating": 2345,
         "members": [
             "<span class=\"user-yellow\">naniwazu</span>",
@@ -351,7 +351,7 @@
             "<span class=\"user-orange\">physics0523</span>"
         ]
     },
-    "Love Jiro": {
+    "LoveJiro": {
         "team_rating": 1022,
         "members": [
             "<span class=\"user-green\">tossy2002</span>",
@@ -407,7 +407,7 @@
             "<span class=\"user-green\">alfons</span>"
         ]
     },
-    "Sophia Ondemand Printer": {
+    "SophiaOndemandPrinter": {
         "team_rating": 1690,
         "members": [
             "<span class=\"user-blue\">nikoro256</span>",
@@ -415,7 +415,7 @@
             "<span class=\"user-green\">trkwm</span>"
         ]
     },
-    "togetoge castle": {
+    "togetogecastle": {
         "team_rating": 1701,
         "members": [
             "<span class=\"user-blue\">viral</span>",
@@ -439,7 +439,7 @@
             "<span class=\"user-orange\">tofudra</span>"
         ]
     },
-    "executive is deprived": {
+    "executiveisdeprived": {
         "team_rating": 1848,
         "members": [
             "<span class=\"user-blue\">a01sa01to</span>",
@@ -447,7 +447,7 @@
             "<span class=\"user-green\">kAsA02</span>"
         ]
     },
-    "MAXIMUM TUNE 6RR": {
+    "MAXIMUMTUNE6RR": {
         "team_rating": 949,
         "members": [
             "<span class=\"user-green\">sor4chi</span>",
@@ -463,7 +463,7 @@
             ""
         ]
     },
-    "Maximum Legends": {
+    "MaximumLegends": {
         "team_rating": 497,
         "members": [
             "<span class=\"user-gray\">yotsubo</span>",
@@ -479,7 +479,7 @@
             "<span class=\"user-brown\">wa_mi</span>"
         ]
     },
-    "Arcane Mages": {
+    "ArcaneMages": {
         "team_rating": 2352,
         "members": [
             "<span class=\"user-yellow\">kaage</span>",
@@ -495,7 +495,7 @@
             "<span class=\"user-yellow\">akua</span>"
         ]
     },
-    "Maximum ES": {
+    "MaximumES": {
         "team_rating": 344,
         "members": [
             "<span class=\"user-gray\">flyingflow</span>",
@@ -503,7 +503,7 @@
             "<span class=\"user-unrated\">kaki0729</span>"
         ]
     },
-    "Sukina Algorithm Happyo Dragon": {
+    "SukinaAlgorithmHappyoDragon": {
         "team_rating": 1802,
         "members": [
             "<span class=\"user-blue\">hiro71687</span>",
@@ -535,7 +535,7 @@
             "<span class=\"user-yellow\">Thistle</span>"
         ]
     },
-    "Distance Sums 2": {
+    "DistanceSums2": {
         "team_rating": 2191,
         "members": [
             "<span class=\"user-yellow\">nishionyama</span>",
@@ -567,7 +567,7 @@
             "Luke256"
         ]
     },
-    "I_do_understand_the_danger_of_ overflow_and_really_want_to_use_ 32bit_integer": {
+    "I_do_understand_the_danger_of_overflow_and_really_want_to_use_32bit_integer": {
         "team_rating": 2604,
         "members": [
             "<span class=\"user-orange\">Yu_212</span>",
@@ -605,6 +605,14 @@
             "<span class=\"user-gray\">Mitarasi89</span>",
             "<span class=\"user-gray\">Rinosu</span>",
             "<span class=\"user-unrated\">yuu1202</span>"
+        ]
+    },
+    "K3s": {
+        "team_rating": 1587,
+        "members": [
+            "<span class=\"user-cyan\">mealy</span>",
+            "<span class=\"user-cyan\">dogo</span>",
+            "<span class=\"user-green\">Nanashima</span>"
         ]
     }
 }

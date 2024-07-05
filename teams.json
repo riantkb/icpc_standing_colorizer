@@ -326,5 +326,29 @@
             "<span class=\"user-yellow\">yuma220284</span>",
             "<span class=\"user-yellow\">TKO</span>"
         ]
+    },
+    "mitatreaf": {
+        "team_rating": 2112,
+        "members": [
+            "<span class=\"user-yellow\">Mitarushi</span>",
+            "<span class=\"user-blue\">atree</span>",
+            "<span class=\"user-cyan\">leafirby</span>"
+        ]
+    },
+    "itigo": {
+        "team_rating": 1568,
+        "members": [
+            "<span class=\"user-cyan\">winter_2521</span>",
+            "<span class=\"user-cyan\">Uue_kun</span>",
+            "<span class=\"user-green\">HiyajoMaho</span>"
+        ]
+    },
+    "Objective-KUB1": {
+        "team_rating": 2838,
+        "members": [
+            "<span class=\"user-orange\">cn449</span>",
+            "<span class=\"user-orange\">sheyasutaka</span>",
+            "<span class=\"user-orange\">physics0523</span>"
+        ]
     }
 }

@@ -558,5 +558,45 @@
             "<span class=\"user-green\">SuperYAMADA</span>",
             "<span class=\"user-cyan\">Ryoga_exe</span>"
         ]
+    },
+    "mozu": {
+        "team_rating": 1879,
+        "members": [
+            "<span class=\"user-blue\">iro_</span>",
+            "<span class=\"user-blue\">MZKi</span>",
+            "Luke256"
+        ]
+    },
+    "I_do_understand_the_danger_of_ overflow_and_really_want_to_use_ 32bit_integer": {
+        "team_rating": 2604,
+        "members": [
+            "<span class=\"user-orange\">Yu_212</span>",
+            "<span class=\"user-yellow\">keymoon</span>",
+            "<span class=\"user-green\">nola</span>"
+        ]
+    },
+    "Aobayama_Marines": {
+        "team_rating": 2219,
+        "members": [
+            "<span class=\"user-yellow\">suo</span>",
+            "<span class=\"user-blue\">tanaka2_55</span>",
+            "<span class=\"user-cyan\">E49869826</span>"
+        ]
+    },
+    "TECHNICOLORZ": {
+        "team_rating": 2000,
+        "members": [
+            "<span class=\"user-blue\">QiToY</span>",
+            "<span class=\"user-green\">Kei83</span>",
+            "<span class=\"user-blue\">haruki4936</span>"
+        ]
+    },
+    "HHIJKT": {
+        "team_rating": 2271,
+        "members": [
+            "<span class=\"user-yellow\">kumjin3141</span>",
+            "<span class=\"user-gray\">mimirot</span>",
+            "<span class=\"user-blue\">hari64</span>"
+        ]
     }
 }

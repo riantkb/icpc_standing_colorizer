@@ -518,5 +518,45 @@
             "<span class=\"user-unrated\">moru</span>",
             "<span class=\"user-green\">annkake_yaki</span>"
         ]
+    },
+    "FUNCoderA": {
+        "team_rating": 2073,
+        "members": [
+            "<span class=\"user-yellow\">FUN_Morikubo</span>",
+            "<span class=\"user-brown\">neko16neko</span>",
+            "<span class=\"user-gray\">xrm</span>"
+        ]
+    },
+    "Ke_IS_U": {
+        "team_rating": 2264,
+        "members": [
+            "<span class=\"user-blue\">Katu2ou</span>",
+            "<span class=\"user-yellow\">Rho17</span>",
+            "<span class=\"user-yellow\">Thistle</span>"
+        ]
+    },
+    "Distance Sums 2": {
+        "team_rating": 2191,
+        "members": [
+            "<span class=\"user-yellow\">nishionyama</span>",
+            "<span class=\"user-yellow\">niuez</span>",
+            "<span class=\"user-blue\">shama</span>"
+        ]
+    },
+    "UI_beam": {
+        "team_rating": 1917,
+        "members": [
+            "<span class=\"user-cyan\">nope124</span>",
+            "<span class=\"user-blue\">KerakTelor</span>",
+            "<span class=\"user-blue\">Shuzaei</span>"
+        ]
+    },
+    "turqu01se": {
+        "team_rating": 1724,
+        "members": [
+            "<span class=\"user-blue\">kichi2004_</span>",
+            "<span class=\"user-green\">SuperYAMADA</span>",
+            "<span class=\"user-cyan\">Ryoga_exe</span>"
+        ]
     }
 }

@@ -150,7 +150,7 @@ df = df.reindex(
     columns=["チーム名", "学校名", "チームレート", "メンバー1", "メンバー2", "メンバー3", "コーチ", "ひとこと等"]
 )
 for c in ("チーム名", "学校名", "メンバー1", "メンバー2", "メンバー3", "コーチ", "ひとこと等"):
-    df[c] = df[c].map(lambda s: s.replace("\n", "").strip())
+    df[c] = df[c].map(lambda s: s.replace(" ", "").replace("\n", "").strip())
     df[c] = df[c].map(html.escape)
 
 res_dict = {}

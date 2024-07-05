@@ -310,5 +310,13 @@
             "<span class=\"user-green\">nigs</span>",
             "<span class=\"user-green\">Sakasu</span>"
         ]
+    },
+    "SmartTechZone": {
+        "team_rating": 1497,
+        "members": [
+            "<span class=\"user-unrated\">SyntaxError</span>",
+            "<span class=\"user-cyan\">TwoSquirrels</span>",
+            "ZOI_dayo"
+        ]
     }
 }

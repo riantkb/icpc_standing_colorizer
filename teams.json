@@ -454,5 +454,21 @@
             "<span class=\"user-brown\">hrns</span>",
             "<span class=\"user-brown\">batora</span>"
         ]
+    },
+    "KusanoMidori": {
+        "team_rating": 1677,
+        "members": [
+            "<span class=\"user-blue\">Andrew8128</span>",
+            "",
+            ""
+        ]
+    },
+    "Maximum Legends": {
+        "team_rating": 497,
+        "members": [
+            "<span class=\"user-gray\">yotsubo</span>",
+            "<span class=\"user-gray\">rururu</span>",
+            "<span class=\"user-gray\">ebichiri</span>"
+        ]
     }
 }

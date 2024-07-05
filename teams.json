@@ -422,5 +422,37 @@
             "",
             ""
         ]
+    },
+    "tcknyo": {
+        "team_rating": 1909,
+        "members": [
+            "<span class=\"user-blue\">toku4388</span>",
+            "<span class=\"user-blue\">chimaki821</span>",
+            "<span class=\"user-cyan\">kyomikyomi</span>"
+        ]
+    },
+    "MST": {
+        "team_rating": 2690,
+        "members": [
+            "<span class=\"user-yellow\">Mitsubachi</span>",
+            "<span class=\"user-orange\">siganai</span>",
+            "<span class=\"user-orange\">tofudra</span>"
+        ]
+    },
+    "executive is deprived": {
+        "team_rating": 1848,
+        "members": [
+            "<span class=\"user-blue\">a01sa01to</span>",
+            "<span class=\"user-blue\">through</span>",
+            "<span class=\"user-green\">kAsA02</span>"
+        ]
+    },
+    "MAXIMUM TUNE 6RR": {
+        "team_rating": 949,
+        "members": [
+            "<span class=\"user-green\">sor4chi</span>",
+            "<span class=\"user-brown\">hrns</span>",
+            "<span class=\"user-brown\">batora</span>"
+        ]
     }
 }

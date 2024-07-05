@@ -56,12 +56,13 @@
     line-height: 1.6em;
     color: #111;
     border-radius: 5px;
-    background: #ccc;
+    background: rgba(238,238,238,0.9);
+    border: none;
     width: 40px;
 }
 
 .tooltip1:hover .description1 {
     display: inline-block;
-    top: -4px;
-    left: -42px;
+    top: 8px;
+    left: 12px;
 }

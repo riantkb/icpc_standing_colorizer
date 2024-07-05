@@ -264,10 +264,10 @@
         ]
     },
     "zer0shiki": {
-        "team_rating": 2172,
+        "team_rating": 2272,
         "members": [
             "<span class=\"user-yellow\">zer0star</span>",
-            "<span class=\"user-gray\">kenken</span>",
+            "<span class=\"user-yellow\">kenken714</span>",
             "<span class=\"user-blue\">x0214sh7</span>"
         ]
     },
@@ -469,6 +469,54 @@
             "<span class=\"user-gray\">yotsubo</span>",
             "<span class=\"user-gray\">rururu</span>",
             "<span class=\"user-gray\">ebichiri</span>"
+        ]
+    },
+    "mountain_river_village": {
+        "team_rating": 687,
+        "members": [
+            "LL",
+            "<span class=\"user-unrated\">nakamura</span>",
+            "<span class=\"user-brown\">wa_mi</span>"
+        ]
+    },
+    "Arcane Mages": {
+        "team_rating": 2352,
+        "members": [
+            "<span class=\"user-yellow\">kaage</span>",
+            "<span class=\"user-yellow\">alcea</span>",
+            "<span class=\"user-yellow\">marc2825</span>"
+        ]
+    },
+    "Shamrock": {
+        "team_rating": 2006,
+        "members": [
+            "<span class=\"user-green\">na12</span>",
+            "N",
+            "<span class=\"user-yellow\">akua</span>"
+        ]
+    },
+    "Maximum ES": {
+        "team_rating": 344,
+        "members": [
+            "<span class=\"user-gray\">flyingflow</span>",
+            "<span class=\"user-unrated\">yutaa01</span>",
+            "<span class=\"user-unrated\">kaki0729</span>"
+        ]
+    },
+    "Sukina Algorithm Happyo Dragon": {
+        "team_rating": 1802,
+        "members": [
+            "<span class=\"user-blue\">hiro71687</span>",
+            "<span class=\"user-cyan\">Gandalfr</span>",
+            "<span class=\"user-cyan\">Herring101</span>"
+        ]
+    },
+    "GueMoru_Yakinamashi": {
+        "team_rating": 1253,
+        "members": [
+            "<span class=\"user-cyan\">gue</span>",
+            "<span class=\"user-unrated\">moru</span>",
+            "<span class=\"user-green\">annkake_yaki</span>"
         ]
     }
 }

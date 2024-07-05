@@ -280,10 +280,10 @@
         ]
     },
     "TEAm_Feverfew": {
-        "team_rating": 934,
+        "team_rating": 986,
         "members": [
+            "<span class=\"user-brown\">sgmrmrk</span>",
             "<span class=\"user-green\">YTa09</span>",
-            "",
             ""
         ]
     },
@@ -405,6 +405,22 @@
             "<span class=\"user-green\">Hikari30</span>",
             "<span class=\"user-green\">mkreem</span>",
             "<span class=\"user-green\">alfons</span>"
+        ]
+    },
+    "Sophia Ondemand Printer": {
+        "team_rating": 1690,
+        "members": [
+            "<span class=\"user-blue\">nikoro256</span>",
+            "<span class=\"user-green\">Suzux</span>",
+            "<span class=\"user-green\">trkwm</span>"
+        ]
+    },
+    "togetoge castle": {
+        "team_rating": 1701,
+        "members": [
+            "<span class=\"user-blue\">viral</span>",
+            "",
+            ""
         ]
     }
 }

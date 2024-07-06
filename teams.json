@@ -622,5 +622,13 @@
             "<span class=\"user-unrated\">hokaze</span>",
             "<span class=\"user-cyan\">ramdos</span>"
         ]
+    },
+    "triC": {
+        "team_rating": 1850,
+        "members": [
+            "<span class=\"user-blue\">igeee</span>",
+            "<span class=\"user-green\">Harui</span>",
+            "<span class=\"user-green\">cijb_7724</span>"
+        ]
     }
 }

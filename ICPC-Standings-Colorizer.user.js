@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         ICPC Japan Standings Colorizer
 // @namespace    https://github.com/riantkb/icpc_standing_colorizer
-// @version      0.7.2
+// @version      0.8.0
 // @description  ICPC Japan Standings Colorizer
 // @author       riantkb
 // @match        https://www.yamagula.ic.i.u-tokyo.ac.jp/*/standings.html
@@ -229,9 +229,11 @@ function firebaseapp() {
       .then((team_dic) => {
         for (const e of lines) {
           if (e == null) continue;
-          const tname = e.innerText.split("\n")[0];
+          const tspan = /** @type {HTMLElement} */ (e.querySelector("span > span"));
+          if (tspan == null) continue;
+          const tname = tspan.innerText.trim();
           if (tname in team_dic) {
-            e.innerHTML = decorate(e.innerHTML, tname, team_dic[tname]);
+            tspan.innerHTML = decorate(tspan.innerHTML, tname, team_dic[tname]);
           }
         }
 
@@ -244,14 +246,17 @@ function firebaseapp() {
           if (e == null) continue;
           // @ts-ignore
           if (e.parentNode.parentNode.classList.contains("sticky")) continue; // pass pined
-          const a = /** @type {HTMLElement} */ (e.querySelector("span > small > span"));
-          if (a == null) continue;
-          const uname = a.innerText.split("[")[0].trim();
+
+          const tspan = /** @type {HTMLElement} */ (e.querySelector("span > span"));
+          if (tspan == null) continue;
+          const tname = tspan.innerText.trim();
+          const uspan = /** @type {HTMLElement} */ (e.querySelector("span.university-name"));
+          if (uspan == null) continue;
+          const uname = uspan.innerText.trim();
           if (!(uname in count_in_univ)) {
             count_in_univ[uname] = 0;
           }
           count_in_univ[uname]++;
-          const tname = e.innerText.split("\n")[0];
           rank_in_univ[tname] = count_in_univ[uname];
 
           if (is_domestic) {
@@ -268,11 +273,15 @@ function firebaseapp() {
         }
         for (const e of lines) {
           if (e == null) continue;
-          const a = /** @type {HTMLElement} */ (e.querySelector("span > small > span"));
-          if (a == null) continue;
-          const uname = a.innerText.split("[")[0].trim();
-          const tname = e.innerText.split("\n")[0];
-          a.innerHTML = `${uname} <small> [${rank_in_univ[tname]}/${count_in_univ[uname]}]</small>`;
+          const tspan = /** @type {HTMLElement} */ (e.querySelector("span > span"));
+          if (tspan == null) continue;
+          const tname = tspan.innerText.trim();
+          const uspan = /** @type {HTMLElement} */ (e.querySelector("span.university-name"));
+          if (uspan == null) continue;
+          const uname = uspan.innerText.trim();
+          const rspan = /** @type {HTMLElement} */ (e.querySelector("span.university-rank"));
+          if (rspan == null) continue;
+          rspan.innerHTML = `[${rank_in_univ[tname]}/${count_in_univ[uname]}]`;
           if (is_domestic) {
             if (is_pass[tname]) {
               e.style.backgroundColor = "#e3fae3";
@@ -282,8 +291,8 @@ function firebaseapp() {
           }
         }
       })
-      .catch((_e) => {})
-      .catch((_e) => {});
+      .catch((_e) => { })
+      .catch((_e) => { });
   });
   setTimeout(main, 4000);
 }

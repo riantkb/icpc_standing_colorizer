@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         ICPC Japan Standings Colorizer
 // @namespace    https://github.com/riantkb/icpc_standing_colorizer
-// @version      0.8.1
+// @version      0.8.2
 // @description  ICPC Japan Standings Colorizer
 // @author       riantkb
 // @match        https://www.yamagula.ic.i.u-tokyo.ac.jp/*/standings.html
@@ -271,12 +271,12 @@ function firebaseapp() {
             is_pass[tname] = pass > 0;
           }
         }
-        for (const e of lines) {
-          if (e == null) continue;
-          const tspan = /** @type {HTMLElement} */ (e.querySelector("span > span"));
-          if (tspan == null) continue;
-          const tname = tspan.innerText.trim();
-          if (is_domestic) {
+        if (is_domestic) {
+          for (const e of lines) {
+            if (e == null) continue;
+            const tspan = /** @type {HTMLElement} */ (e.querySelector("span > span"));
+            if (tspan == null) continue;
+            const tname = tspan.innerText.trim();
             if (is_pass[tname]) {
               e.style.backgroundColor = "#e3fae3";
             } else {

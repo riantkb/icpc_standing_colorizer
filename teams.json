@@ -254,5 +254,29 @@
             "<span class=\"user-yellow\">serendipity_</span>",
             "<span class=\"user-yellow\">miscalculation53</span>"
         ]
+    },
+    "y_1": {
+        "team_rating": 2217,
+        "members": [
+            "<span class=\"user-blue\">kouty</span>",
+            "<span class=\"user-yellow\">hato_</span>",
+            "<span class=\"user-blue\">ococonomy1</span>"
+        ]
+    },
+    "homework": {
+        "team_rating": 1969,
+        "members": [
+            "<span class=\"user-blue\">houren</span>",
+            "<span class=\"user-green\">memin</span>",
+            "<span class=\"user-green\">woody_1227</span>"
+        ]
+    },
+    "midoribeko": {
+        "team_rating": 1325,
+        "members": [
+            "<span class=\"user-green\">sorachandu</span>",
+            "<span class=\"user-green\">hotate29</span>",
+            "<span class=\"user-green\">taio</span>"
+        ]
     }
 }

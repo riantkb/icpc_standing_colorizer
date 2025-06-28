@@ -11,7 +11,7 @@ import pickle
 import rating_utils
 
 
-YEAR = 2024
+YEAR = 2025
 YEAR_BEGIN = 2021
 
 
@@ -142,7 +142,7 @@ def get_user_span(username: str, enable_link: bool):
 
 
 url = f"https://jag-icpc.org/?{YEAR}%2FTeams%2FList"
-df = pd.read_html(url)[1].fillna("")[5:].reset_index(drop=True)
+df = pd.read_html(url)[1].fillna("")[4:].reset_index(drop=True)
 df = df.rename(columns={"メンバー 1": "メンバー1", "コーチ，ココーチ": "コーチ"})
 user_columns = ("メンバー1", "メンバー2", "メンバー3", "コーチ")
 df["チームレート"] = 0

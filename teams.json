@@ -230,5 +230,29 @@
             "Ackvy",
             "<span class=\"user-brown\">Binomial</span>"
         ]
+    },
+    "Aobayama_BlueMountain": {
+        "team_rating": 2147,
+        "members": [
+            "<span class=\"user-blue\">ripity</span>",
+            "<span class=\"user-yellow\">n_o_n_o_n</span>",
+            "<span class=\"user-green\">aqua_dhmo</span>"
+        ]
+    },
+    "edakari_ha_iyada": {
+        "team_rating": 1588,
+        "members": [
+            "<span class=\"user-cyan\">ramdos</span>",
+            "<span class=\"user-cyan\">TwoSquirrels</span>",
+            "<span class=\"user-cyan\">ryu150</span>"
+        ]
+    },
+    "Magical Fish": {
+        "team_rating": 2414,
+        "members": [
+            "<span class=\"user-yellow\">confeito</span>",
+            "<span class=\"user-yellow\">serendipity_</span>",
+            "<span class=\"user-yellow\">miscalculation53</span>"
+        ]
     }
 }

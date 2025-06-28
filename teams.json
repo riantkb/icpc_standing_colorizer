@@ -214,5 +214,21 @@
             "<span class=\"user-cyan\">yurina256</span>",
             "<span class=\"user-green\">llMotoll</span>"
         ]
+    },
+    "Sophia Pythonista": {
+        "team_rating": 1912,
+        "members": [
+            "<span class=\"user-blue\">nikoro256</span>",
+            "<span class=\"user-cyan\">Suzux</span>",
+            "<span class=\"user-green\">trkwm</span>"
+        ]
+    },
+    "corbeau": {
+        "team_rating": 2015,
+        "members": [
+            "<span class=\"user-yellow\">Kyo_s_s</span>",
+            "Ackvy",
+            "<span class=\"user-brown\">Binomial</span>"
+        ]
     }
 }

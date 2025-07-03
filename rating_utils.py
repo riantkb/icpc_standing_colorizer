@@ -1,6 +1,3 @@
-import math
-
-
 def __get_win_probability(ra: float, rb: float):
     return 1 / (1 + 10 ** ((rb - ra) / 400))
 
@@ -12,8 +9,7 @@ def aggregate_ratings(teamRatings):
         rWinsProbability = 1
         for rat in teamRatings:
             rWinsProbability *= __get_win_probability(r, rat)
-        rating = math.log10(1 / rWinsProbability - 1) * 400 + r
-        if rating > r:
+        if rWinsProbability < 0.5:
             left = r
         else:
             right = r

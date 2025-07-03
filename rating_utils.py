@@ -1,5 +1,5 @@
 def __get_win_probability(ra: float, rb: float):
-    return 1 / (1 + 10 ** ((rb - ra) / 400))
+    return 1 / (1 + 6 ** ((rb - ra) / 400))
 
 
 def aggregate_ratings(teamRatings):

@@ -56,9 +56,9 @@
         ]
     },
     "HAOU KAYAMA": {
-        "team_rating": 2209,
+        "team_rating": 2395,
         "members": [
-            "Sotatsu",
+            "<span class=\"user-yellow\">tassei903</span>",
             "<span class=\"user-yellow\">Nzt3</span>",
             "<span class=\"user-blue\">Koi51</span>"
         ]
@@ -421,6 +421,54 @@
             "<span class=\"user-green\">zsxdcfv</span>",
             "<span class=\"user-green\">mollll</span>",
             "<span class=\"user-gray\">maruisan</span>"
+        ]
+    },
+    "Genius Magic Coders": {
+        "team_rating": 2131,
+        "members": [
+            "<span class=\"user-yellow\">marc2825</span>",
+            "<span class=\"user-blue\">get_tanni</span>",
+            "<span class=\"user-blue\">CoCo_Japan_pan</span>"
+        ]
+    },
+    "yoshidayama": {
+        "team_rating": 1896,
+        "members": [
+            "<span class=\"user-blue\">yamadanull</span>",
+            "<span class=\"user-cyan\">PyonPyon</span>",
+            "<span class=\"user-cyan\">gnu_0624</span>"
+        ]
+    },
+    "KATUNI": {
+        "team_rating": 1365,
+        "members": [
+            "<span class=\"user-green\">toufu24</span>",
+            "<span class=\"user-green\">mr63tnegi</span>",
+            "<span class=\"user-green\">nigs</span>"
+        ]
+    },
+    "Super Hyper Intelligence": {
+        "team_rating": 800,
+        "members": [
+            "<span class=\"user-brown\">shun_shobon</span>",
+            "<span class=\"user-brown\">holmeshoo</span>",
+            "<span class=\"user-brown\">Inoyu</span>"
+        ]
+    },
+    "tawny_kgs": {
+        "team_rating": 657,
+        "members": [
+            "<span class=\"user-unrated\">hisagi</span>",
+            "<span class=\"user-brown\">genchan_omega</span>",
+            "SSSato"
+        ]
+    },
+    "Try-Catch Me If You Can": {
+        "team_rating": 1789,
+        "members": [
+            "<span class=\"user-blue\">Noela</span>",
+            "<span class=\"user-green\">Nameless_itf</span>",
+            "<span class=\"user-brown\">arata_nvm</span>"
         ]
     }
 }

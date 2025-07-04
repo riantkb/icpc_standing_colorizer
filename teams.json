@@ -284,7 +284,7 @@
         "members": [
             "\u305f\u304d\u306a",
             "<span class=\"user-cyan\">h1rano</span>",
-            "[@haruharu_RQA&gt;twitter:\u306f\u308b\u306f\u308b]"
+            "\u306f\u308b\u306f\u308b"
         ]
     },
     "knowcow": {
@@ -304,11 +304,11 @@
         ]
     },
     "BZS": {
-        "team_rating": 918,
+        "team_rating": 1013,
         "members": [
             "<span class=\"user-brown\">sen469</span>",
             "<span class=\"user-brown\">Tehom</span>",
-            "\u3042\u305a\u3073\u308f"
+            "<span class=\"user-brown\">Azubiwa</span>"
         ]
     },
     "GU": {
@@ -325,6 +325,22 @@
             "<span class=\"user-brown\">nakakouTV</span>",
             "<span class=\"user-green\">hakakeen</span>",
             "<span class=\"user-gray\">KomeijiArmia</span>"
+        ]
+    },
+    "Over_FLOw_CANCEL_KAIWAI": {
+        "team_rating": 1749,
+        "members": [
+            "<span class=\"user-cyan\">itokoi</span>",
+            "<span class=\"user-cyan\">sakasu1</span>",
+            "<span class=\"user-cyan\">Gandalfr</span>"
+        ]
+    },
+    "yuanfen": {
+        "team_rating": 1876,
+        "members": [
+            "<span class=\"user-blue\">iomir</span>",
+            "<span class=\"user-blue\">M3_cp</span>",
+            "<span class=\"user-cyan\">ardRiriy</span>"
         ]
     }
 }

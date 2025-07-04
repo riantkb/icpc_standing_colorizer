@@ -342,5 +342,29 @@
             "<span class=\"user-blue\">M3_cp</span>",
             "<span class=\"user-cyan\">ardRiriy</span>"
         ]
+    },
+    "triC": {
+        "team_rating": 1763,
+        "members": [
+            "<span class=\"user-blue\">igeee</span>",
+            "<span class=\"user-green\">Harui</span>",
+            "<span class=\"user-green\">cijb_7724</span>"
+        ]
+    },
+    "CodeWarriors": {
+        "team_rating": 1376,
+        "members": [
+            "<span class=\"user-cyan\">HIKKY1317</span>",
+            "<span class=\"user-green\">olff</span>",
+            "<span class=\"user-brown\">stratempest</span>"
+        ]
+    },
+    "O1_Practice": {
+        "team_rating": 2257,
+        "members": [
+            "<span class=\"user-blue\">tyawanmusi</span>",
+            "<span class=\"user-yellow\">dyktr_06</span>",
+            "<span class=\"user-blue\">sepa_38</span>"
+        ]
     }
 }

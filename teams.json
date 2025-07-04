@@ -382,5 +382,45 @@
             "<span class=\"user-yellow\">kusaf_</span>",
             "<span class=\"user-blue\">a_s_k</span>"
         ]
+    },
+    "tanabata_Aobayama": {
+        "team_rating": 1287,
+        "members": [
+            "<span class=\"user-green\">poipoi106</span>",
+            "<span class=\"user-brown\">mk16</span>",
+            "<span class=\"user-green\">Like_Lilac</span>"
+        ]
+    },
+    "B1ueRose": {
+        "team_rating": 2017,
+        "members": [
+            "<span class=\"user-cyan\">hare1</span>",
+            "<span class=\"user-green\">mamime19</span>",
+            "<span class=\"user-blue\">syndrome</span>"
+        ]
+    },
+    "Akai_Koibito": {
+        "team_rating": 2089,
+        "members": [
+            "<span class=\"user-blue\">Today03</span>",
+            "<span class=\"user-blue\">tardigrade</span>",
+            "<span class=\"user-cyan\">titan23</span>"
+        ]
+    },
+    "Ofuton Limit Exceeded": {
+        "team_rating": 1547,
+        "members": [
+            "<span class=\"user-cyan\">Uue_kun</span>",
+            "<span class=\"user-cyan\">lp_ql</span>",
+            "<span class=\"user-green\">Mikan04y</span>"
+        ]
+    },
+    "marui_kousaten": {
+        "team_rating": 1269,
+        "members": [
+            "<span class=\"user-green\">zsxdcfv</span>",
+            "<span class=\"user-green\">mollll</span>",
+            "<span class=\"user-gray\">maruisan</span>"
+        ]
     }
 }

@@ -366,5 +366,21 @@
             "<span class=\"user-yellow\">dyktr_06</span>",
             "<span class=\"user-blue\">sepa_38</span>"
         ]
+    },
+    "faluna": {
+        "team_rating": 2103,
+        "members": [
+            "<span class=\"user-blue\">Ayuna</span>",
+            "<span class=\"user-blue\">Lazz</span>",
+            "<span class=\"user-cyan\">kotafuku</span>"
+        ]
+    },
+    "KUdos": {
+        "team_rating": 2266,
+        "members": [
+            "<span class=\"user-yellow\">Capo</span>",
+            "<span class=\"user-yellow\">kusaf_</span>",
+            "<span class=\"user-blue\">a_s_k</span>"
+        ]
     }
 }

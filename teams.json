@@ -40,23 +40,23 @@
         ]
     },
     "bogosort": {
-        "team_rating": 2493,
+        "team_rating": 2486,
         "members": [
             "<span class=\"user-orange\">soryuusi0219</span>",
-            "<span class=\"user-yellow\">jastaway</span>",
+            "<span class=\"user-blue\">jastaway</span>",
             "<span class=\"user-cyan\">tatesoto</span>"
         ]
     },
     "The Revenge of shinchan": {
         "team_rating": 3144,
         "members": [
-            "<span><img src=\"https://img.atcoder.jp/assets/icon/crown_bronze.png\"/><span class=\"user-red\">Nachia</span></span>",
+            "<span><img src=\"https://img.atcoder.jp/assets/icon/crown_silver.png\"/><span class=\"user-red\">Nachia</span></span>",
             "<span class=\"user-yellow\">KowerKoint</span>",
             "<span class=\"user-yellow\">krit3379</span>"
         ]
     },
     "HAOU KAYAMA": {
-        "team_rating": 2382,
+        "team_rating": 2362,
         "members": [
             "<span class=\"user-yellow\">tassei903</span>",
             "<span class=\"user-yellow\">Nzt3</span>",
@@ -64,7 +64,7 @@
         ]
     },
     "o3-kayama": {
-        "team_rating": 2697,
+        "team_rating": 2728,
         "members": [
             "<span class=\"user-orange\">ponjuice</span>",
             "<span class=\"user-orange\">Series_205</span>",
@@ -80,7 +80,7 @@
         ]
     },
     "NUcomer": {
-        "team_rating": 2184,
+        "team_rating": 2195,
         "members": [
             "<span class=\"user-blue\">tour2st</span>",
             "<span class=\"user-blue\">Levixi</span>",

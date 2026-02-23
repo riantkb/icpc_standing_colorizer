@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         ICPC Japan Standings Colorizer
 // @namespace    https://github.com/riantkb/icpc_standing_colorizer
-// @version      0.9.1
+// @version      0.9.2
 // @description  ICPC Japan Standings Colorizer
 // @author       riantkb
 // @match        https://www.yamagula.ic.i.u-tokyo.ac.jp/*/standings.html
@@ -90,14 +90,14 @@ function getColorCode(rating) {
  */
 function generateTopcoderLikeCircle(rating) {
   if (rating >= 3600) {
-    return `<span style="display: inline-block; border-radius: 50%; border-style: solid; border-width: 1px; height: 12px; width: 12px; border-color: rgb(255, 215, 0); background: linear-gradient(to right, rgb(255, 215, 0), white, rgb(255, 215, 0));"></span>`;
+    return `<span title="${rating}" style="display: inline-block; border-radius: 50%; border-style: solid; border-width: 1px; height: 12px; width: 12px; border-color: rgb(255, 215, 0); background: linear-gradient(to right, rgb(255, 215, 0), white, rgb(255, 215, 0));"></span>`;
   }
   if (rating >= 3200) {
-    return `<span style="display: inline-block; border-radius: 50%; border-style: solid; border-width: 1px; height: 12px; width: 12px; border-color: rgb(128, 128, 128); background: linear-gradient(to right, rgb(128, 128, 128), white, rgb(128, 128, 128));"></span>`;
+    return `<span title="${rating}" style="display: inline-block; border-radius: 50%; border-style: solid; border-width: 1px; height: 12px; width: 12px; border-color: rgb(128, 128, 128); background: linear-gradient(to right, rgb(128, 128, 128), white, rgb(128, 128, 128));"></span>`;
   }
   const ccode = getColorCode(rating);
   const fill_ratio = rating >= 3200 ? 100 : (rating % 400) / 4;
-  return `<span style="display: inline-block; border-radius: 50%; border-style: solid; border-width: 1px; height: 12px; width: 12px; border-color: ${ccode}; background: linear-gradient(to top, ${ccode} ${fill_ratio}%, rgba(0,0,0,0) ${fill_ratio}%);"></span>`;
+  return `<span title="${rating}" style="display: inline-block; border-radius: 50%; border-style: solid; border-width: 1px; height: 12px; width: 12px; border-color: ${ccode}; background: linear-gradient(to top, ${ccode} ${fill_ratio}%, rgba(0,0,0,0) ${fill_ratio}%);"></span>`;
 }
 
 /**
@@ -107,10 +107,9 @@ function generateTopcoderLikeCircle(rating) {
  */
 function decorate(h, tname, tinfo) {
   const circle = generateTopcoderLikeCircle(tinfo.team_rating);
-  const circle_span = `<span title="${tinfo.team_rating}">${circle}</span>`;
   return h.replace(
     tname,
-    `${circle_span} ${tname}<br><div style="display: inline-block; border: none; padding: 0"><small>${tinfo.members.join(
+    `${circle} ${tname}<br><div style="display: inline-block; border: none; padding: 0"><small>${tinfo.members.join(
       ", "
     )}</small></div>`
   );

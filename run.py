@@ -231,7 +231,7 @@ with open("index.html", "w") as f:
     f.write(complete_html)
 
 with open("teams.json", "w") as f:
-    json.dump(res_dict, f, indent=4)
+    json.dump(res_dict, f, indent=2)
 
 with open(pickle_path, "wb") as f:
     pickle.dump(pickle_atcoder, f)

@@ -3,7 +3,7 @@ def __get_win_probability(ra: float, rb: float):
 
 
 def aggregate_ratings(teamRatings):
-    left, right = 1, 1e4
+    left, right = 0.0, 1e4
     for _ in range(50):
         r = (left + right) / 2
         rWinsProbability = 1

@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         ICPC Japan Standings Colorizer
 // @namespace    https://github.com/riantkb/icpc_standing_colorizer
-// @version      0.8.4
+// @version      0.9.0
 // @description  ICPC Japan Standings Colorizer
 // @author       riantkb
 // @match        https://www.yamagula.ic.i.u-tokyo.ac.jp/*/standings.html
@@ -107,7 +107,7 @@ function generateTopcoderLikeCircle(rating) {
  */
 function decorate(h, tname, tinfo) {
   const circle = generateTopcoderLikeCircle(tinfo.team_rating);
-  const circle_span = `<span class='tooltip1'>${circle}<div class='description1'>${tinfo.team_rating}</div></span>`;
+  const circle_span = `<span title=${tinfo.team_rating}>${circle}</span>`;
   return h.replace(
     tname,
     `${circle_span} ${tname}<br><div style="display: inline-block; border: none; padding: 0"><small>${tinfo.members.join(
@@ -135,78 +135,69 @@ function domestic() {
     }
   }
 
-  fetch(fetchurl, { cache: "no-store" }).then((res) => {
-    res
-      .json()
-      .then((team_dic) => {
-        for (const e of lines) {
-          if (e == null) continue;
-          const a = /** @type {HTMLElement} */ (e.querySelector("td:nth-child(3)"));
-          if (a == null) continue;
-          const tname = a.innerText.split("\n")[0];
-          if (tname in team_dic) {
-            a.innerHTML = decorate(a.innerHTML, tname, team_dic[tname]);
+  fetch(fetchurl, { cache: "no-store" })
+    .then((res) => res.json())
+    .then((team_dic) => {
+      for (const e of lines) {
+        if (e == null) continue;
+        const a = /** @type {HTMLElement|null} */ (e.querySelector("td:nth-child(3)"));
+        if (a == null) continue;
+        const tname = a.innerText.split("\n")[0];
+        if (tname in team_dic) {
+          a.innerHTML = decorate(a.innerHTML, tname, team_dic[tname]);
+        }
+      }
+
+      /** @type {Record<string, number>} */
+      const all_in_univ = Object.create(null);
+      for (const e of lines) {
+        if (e == null) continue;
+        const a = /** @type {HTMLElement|null} */ (e.querySelector("td:nth-child(4)"));
+        if (a == null) continue;
+        const uname = a.innerText.split("\n")[0];
+        all_in_univ[uname] = (all_in_univ[uname] ?? 0) + 1;
+      }
+
+      /** @type {Record<string, number>} */
+      const count_in_univ = Object.create(null);
+      let pass_count = 0;
+      let rem_host = true;
+      for (const e of lines) {
+        if (e == null) continue;
+        const a = /** @type {HTMLElement|null} */ (e.querySelector("td:nth-child(4)"));
+        if (a == null) continue;
+        const uname = a.innerText.split("\n")[0];
+        count_in_univ[uname] = (count_in_univ[uname] ?? 0) + 1;
+
+        const rank_in_univ = count_in_univ[uname];
+        a.innerHTML += ` [${rank_in_univ}/${all_in_univ[uname]}]`;
+
+        let pass = 0;
+        if (isPass(pass_count, rank_in_univ, year)) {
+          pass_count++;
+          pass = 1;
+        } else if (rem_host && isHost(uname, year)) {
+          rem_host = false;
+          pass = 2;
+        }
+        if (pass > 0) {
+          const b = /** @type {HTMLElement|null} */ (e.querySelector("td:nth-child(1)"));
+          if (b == null) continue;
+          b.setAttribute("bgcolor", "#AAE0AA");
+          if (pass == 2) {
+            b.innerHTML += "*";
           }
         }
-
-        const all_in_univ = [];
-        for (const e of lines) {
-          if (e == null) continue;
-          const a = /** @type {HTMLElement} */ (e.querySelector("td:nth-child(4)"));
-          if (a == null) continue;
-          const uname = a.innerText.split("\n")[0];
-          if (!(uname in all_in_univ)) {
-            all_in_univ[uname] = 0;
-          }
-          all_in_univ[uname]++;
-        }
-
-        const count_in_univ = [];
-        let pass_count = 0;
-        let rem_host = true;
-        for (const e of lines) {
-          if (e == null) continue;
-          const a = /** @type {HTMLElement} */ (e.querySelector("td:nth-child(4)"));
-          if (a == null) continue;
-          const uname = a.innerText.split("\n")[0];
-          if (!(uname in count_in_univ)) {
-            count_in_univ[uname] = 0;
-          }
-          count_in_univ[uname]++;
-
-          const rank_in_univ = count_in_univ[uname];
-          a.innerHTML += ` [${rank_in_univ}/${all_in_univ[uname]}]`;
-
-          let pass = 0;
-          if (isPass(pass_count, rank_in_univ, year)) {
-            pass_count++;
-            pass = 1;
-          } else if (rem_host && isHost(uname, year)) {
-            rem_host = false;
-            pass = 2;
-          }
-          if (pass > 0) {
-            const b = e.querySelector("td:nth-child(1)");
-            if (b == null) continue;
-            b.setAttribute("bgcolor", "#AAE0AA");
-            if (pass == 2) {
-              b.innerHTML += "*";
-            }
-          }
-        }
-      })
-      .catch((_e) => {
-        setTimeout(domestic, 3000);
-      })
-      .catch((_e) => {
-        setTimeout(domestic, 3000);
-      });
-  });
+      }
+    })
+    .catch((_e) => {
+      setTimeout(domestic, 3000);
+    });
 }
 
 function firebaseapp() {
   let is_domestic = false;
-  const header = /** @type {HTMLElement} */ (document.querySelector("a.navbar-brand"));
+  const header = /** @type {HTMLElement|null} */ (document.querySelector("a.navbar-brand"));
   if (header != null && (header.innerText.includes("国内予選") || header.innerText.includes("domestic"))) {
     is_domestic = true;
   }
@@ -226,71 +217,72 @@ function firebaseapp() {
     }
   }
 
-  fetch(fetchurl, { cache: "no-store" }).then((res) => {
-    res
-      .json()
-      .then((team_dic) => {
-        for (const e of lines) {
-          if (e == null) continue;
-          const tspan = /** @type {HTMLElement} */ (e.querySelector("span > span"));
-          if (tspan == null) continue;
-          const tname = tspan.innerText.trim();
-          if (tname in team_dic) {
-            tspan.innerHTML = decorate(tspan.innerHTML, tname, team_dic[tname]);
-          }
+  fetch(fetchurl, { cache: "no-store" })
+    .then((res) => res.json())
+    .then((team_dic) => {
+      for (const e of lines) {
+        if (e == null) continue;
+        const tspan = /** @type {HTMLElement|null} */ (e.querySelector("span > span"));
+        if (tspan == null) continue;
+        const tname = tspan.innerText.trim();
+        if (tname in team_dic) {
+          tspan.innerHTML = decorate(tspan.innerHTML, tname, team_dic[tname]);
         }
+      }
 
-        const count_in_univ = [];
-        const rank_in_univ = [];
-        const is_pass = [];
-        let pass_count = 0;
-        let rem_host = true;
-        for (const e of lines) {
-          if (e == null) continue;
-          // @ts-ignore
-          if (e.parentNode.parentNode.classList.contains("sticky")) continue; // pass pined
+      /** @type {Record<string, number>} */
+      const count_in_univ = Object.create(null);
+      /** @type {Record<string, number>} */
+      const rank_in_univ = Object.create(null);
+      /** @type {Record<string, boolean>} */
+      const is_pass = Object.create(null);
 
-          const tspan = /** @type {HTMLElement} */ (e.querySelector("span > span"));
-          if (tspan == null) continue;
-          const tname = tspan.innerText.trim();
-          const uspan = /** @type {HTMLElement} */ (e.querySelector("span.university-name"));
-          if (uspan == null) continue;
-          const uname = uspan.innerText.trim();
-          if (!(uname in count_in_univ)) {
-            count_in_univ[uname] = 0;
-          }
-          count_in_univ[uname]++;
-          rank_in_univ[tname] = count_in_univ[uname];
+      let pass_count = 0;
+      let rem_host = true;
+      for (const e of lines) {
+        if (e == null) continue;
 
-          if (is_domestic) {
-            let pass = 0;
-            if (isPass(pass_count, rank_in_univ[tname], year)) {
-              pass_count++;
-              pass = 1;
-            } else if (rem_host && isHost(uname, year)) {
-              rem_host = false;
-              pass = 2;
-            }
-            is_pass[tname] = pass > 0;
-          }
-        }
+        // pass pinned
+        if (e.parentElement?.parentElement?.classList.contains("sticky")) continue;
+
+        const tspan = /** @type {HTMLElement|null} */ (e.querySelector("span > span"));
+        if (tspan == null) continue;
+        const tname = tspan.innerText.trim();
+        const uspan = /** @type {HTMLElement|null} */ (e.querySelector("span.university-name"));
+        if (uspan == null) continue;
+        const uname = uspan.innerText.trim();
+
+        count_in_univ[uname] = (count_in_univ[uname] ?? 0) + 1;
+        rank_in_univ[tname] = count_in_univ[uname];
+
         if (is_domestic) {
-          for (const e of lines) {
-            if (e == null) continue;
-            const tspan = /** @type {HTMLElement} */ (e.querySelector("span > span"));
-            if (tspan == null) continue;
-            const tname = tspan.innerText.trim();
-            if (is_pass[tname]) {
-              e.style.backgroundColor = "#e3fae3";
-            } else {
-              e.style.backgroundColor = "";
-            }
+          let pass = 0;
+          if (isPass(pass_count, rank_in_univ[tname], year)) {
+            pass_count++;
+            pass = 1;
+          } else if (rem_host && isHost(uname, year)) {
+            rem_host = false;
+            pass = 2;
+          }
+          is_pass[tname] = pass > 0;
+        }
+      }
+      if (is_domestic) {
+        for (const e of lines) {
+          if (e == null) continue;
+          const tspan = /** @type {HTMLElement|null} */ (e.querySelector("span > span"));
+          if (tspan == null) continue;
+          const tname = tspan.innerText.trim();
+          if (is_pass[tname]) {
+            e.style.backgroundColor = "#e3fae3";
+          } else {
+            e.style.backgroundColor = "";
           }
         }
-      })
-      .catch((_e) => { })
-      .catch((_e) => { });
-  });
+      }
+    })
+    .catch((_e) => {});
+
   setTimeout(main, 4000);
 }
 

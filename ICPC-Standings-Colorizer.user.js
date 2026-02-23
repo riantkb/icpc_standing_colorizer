@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         ICPC Japan Standings Colorizer
 // @namespace    https://github.com/riantkb/icpc_standing_colorizer
-// @version      0.9.0
+// @version      0.9.1
 // @description  ICPC Japan Standings Colorizer
 // @author       riantkb
 // @match        https://www.yamagula.ic.i.u-tokyo.ac.jp/*/standings.html
@@ -107,7 +107,7 @@ function generateTopcoderLikeCircle(rating) {
  */
 function decorate(h, tname, tinfo) {
   const circle = generateTopcoderLikeCircle(tinfo.team_rating);
-  const circle_span = `<span title=${tinfo.team_rating}>${circle}</span>`;
+  const circle_span = `<span title="${tinfo.team_rating}">${circle}</span>`;
   return h.replace(
     tname,
     `${circle_span} ${tname}<br><div style="display: inline-block; border: none; padding: 0"><small>${tinfo.members.join(

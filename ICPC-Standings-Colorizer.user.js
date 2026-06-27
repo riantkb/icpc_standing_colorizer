@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         ICPC Japan Standings Colorizer
 // @namespace    https://github.com/riantkb/icpc_standing_colorizer
-// @version      0.9.2
+// @version      0.9.3
 // @description  ICPC Japan Standings Colorizer
 // @author       riantkb
 // @match        https://www.yamagula.ic.i.u-tokyo.ac.jp/*/standings.html
@@ -20,7 +20,7 @@
 // @ts-ignore
 GM_addStyle(GM_getResourceText("style.css"));
 
-const YEAR = 2025;
+const YEAR = 2026;
 const YEAR_BEGIN = 2021;
 
 /**

@@ -8,10 +8,9 @@ import json
 import html
 import pickle
 
-import rating_utils
+from rating_utils import aggregate_ratings
 
-
-YEAR = 2025
+YEAR = 2026
 YEAR_BEGIN = 2021
 
 
@@ -85,11 +84,14 @@ def get_user_rate(username: str):
                         break
         if not ok:
             return 0
-    df = pd.read_html(response.text)
-    if len(df) < 2:
-        # unrated user
+    soup = BeautifulSoup(response.text, "html.parser")
+    rating_th = soup.find(lambda tag: tag.name == "th" and tag.get_text(strip=True) == "Rating")
+    if not rating_th:
         return 0
-    rating = str(df[1][df[1][0] == "Rating"].iloc[0, 1])
+    rating_td = rating_th.find_next_sibling("td")
+    if not rating_td:
+        return 0
+    rating = rating_td.get_text(strip=True)
     if "(Provisional)" in rating:
         rating = rating.replace("(Provisional)", "").replace(" ", "")
     return int(rating)
@@ -145,12 +147,12 @@ url = f"https://jag-icpc.org/?{YEAR}%2FTeams%2FList"
 df = pd.read_html(url)[1].fillna("")[4:].reset_index(drop=True)
 df = df.rename(columns={"メンバー 1": "メンバー1", "コーチ，ココーチ": "コーチ"})
 user_columns = ("メンバー1", "メンバー2", "メンバー3", "コーチ")
-df["チームレート"] = 0
+df["チームレート"] = convert_from_rating_to_span(0)
 df = df.reindex(
     columns=["チーム名", "学校名", "チームレート", "メンバー1", "メンバー2", "メンバー3", "コーチ", "ひとこと等"]
 )
 for c in ("チーム名", "学校名", "メンバー1", "メンバー2", "メンバー3", "コーチ", "ひとこと等"):
-    df[c] = df[c].map(lambda s: s.replace("\n", "").strip())
+    df[c] = df[c].map(lambda s: str(s).replace("\n", "").strip())
     df[c] = df[c].map(html.escape)
 
 res_dict = {}
@@ -166,7 +168,7 @@ for i in range(len(df)):
         username = df[c][i]
         df.loc[df.index[i], c] = get_user_span(username, True)
 
-    team_rating = int(rating_utils.aggregate_ratings(ratings))
+    team_rating = aggregate_ratings(ratings)
     df.loc[df.index[i], "チームレート"] = convert_from_rating_to_span(team_rating)
     res_dict[df["チーム名"][i]] = {"team_rating": team_rating, "members": members}
 
@@ -176,8 +178,7 @@ df = df.reindex(
 
 df_html = df.to_html(escape=False)
 
-complete_html = """
-<!DOCTYPE html>
+complete_html = """<!DOCTYPE html>
 <html>
 <head>
 <meta charset="utf-8" />

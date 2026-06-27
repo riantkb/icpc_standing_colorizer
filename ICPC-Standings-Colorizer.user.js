@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         ICPC Japan Standings Colorizer
 // @namespace    https://github.com/riantkb/icpc_standing_colorizer
-// @version      0.9.3
+// @version      0.9.4
 // @description  ICPC Japan Standings Colorizer
 // @author       riantkb
 // @match        https://www.yamagula.ic.i.u-tokyo.ac.jp/*/standings.html
@@ -9,6 +9,7 @@
 // @match        https://icpcsec.firebaseapp.com/*
 // @match        https://icpcasia.firebaseapp.com/*
 // @match        https://icpcapac.firebaseapp.com/*
+// @match        https://storage.googleapis.com/files.icpc.jp/*/standings.html
 // @grant        GM_getResourceText
 // @grant        GM_addStyle
 // @resource     style.css https://raw.githubusercontent.com/riantkb/icpc_standing_colorizer/master/tampermonkey_script.css
@@ -195,9 +196,13 @@ function domestic() {
 }
 
 function firebaseapp() {
+  const url = window.location.href;
   let is_domestic = false;
   const header = /** @type {HTMLElement|null} */ (document.querySelector("a.navbar-brand"));
-  if (header != null && (header.innerText.includes("国内予選") || header.innerText.includes("domestic"))) {
+  if (
+    url.includes("domestic") ||
+    (header != null && (header.innerText.includes("国内予選") || header.innerText.includes("domestic")))
+  ) {
     is_domestic = true;
   }
 
@@ -210,7 +215,11 @@ function firebaseapp() {
   let fetchurl = "https://raw.githubusercontent.com/riantkb/icpc_standing_colorizer/master/teams.json";
   let year = YEAR;
   for (let y = YEAR_BEGIN; y < YEAR; y++) {
-    if (header != null && header.innerText.includes(`${y}`)) {
+    if (
+      url.includes(`domestic${y}`) ||
+      url.includes(`regional${y}`) ||
+      (header != null && header.innerText.includes(`${y}`))
+    ) {
       fetchurl = `https://raw.githubusercontent.com/riantkb/icpc_standing_colorizer/master/past/${y}.json`;
       year = y;
     }
@@ -290,7 +299,7 @@ function main() {
   const url = window.location.href;
   if (url.includes("yamagula.ic.i.u-tokyo.ac.jp") || url.includes("icpc.iisf.or.jp/past-icpc")) {
     domestic();
-  } else if (url.includes("firebaseapp.com/standings")) {
+  } else if (url.includes("firebaseapp.com/standings") || url.includes("standings.html")) {
     // regional();
     firebaseapp();
   } else {

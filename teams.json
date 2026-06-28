@@ -104,10 +104,10 @@
     ]
   },
   "type-r": {
-    "team_rating": 2123,
+    "team_rating": 2269,
     "members": [
       "<span class=\"user-yellow\">hiryuN</span>",
-      "<span class=\"user-unrated\">Edon</span>",
+      "<span class=\"user-yellow\">edon8618</span>",
       "<span class=\"user-blue\">natoriusan</span>"
     ]
   },
@@ -189,6 +189,22 @@
       "<span class=\"user-blue\">iomir</span>",
       "<span class=\"user-green\">BeforeIrise</span>",
       "<span class=\"user-green\">Show_541</span>"
+    ]
+  },
+  "polyrhythm": {
+    "team_rating": 2999,
+    "members": [
+      "<span><img src=\"https://img.atcoder.jp/assets/icon/crown_bronze.png\"/><span class=\"user-red\">TKTYI</span></span>",
+      "<span class=\"user-orange\">yuma220284</span>",
+      "<span class=\"user-yellow\">HoyHoyCharhang</span>"
+    ]
+  },
+  "OECU_Programming_Circle": {
+    "team_rating": 1728,
+    "members": [
+      "<span class=\"user-blue\">yesantikiss</span>",
+      "",
+      ""
     ]
   }
 }

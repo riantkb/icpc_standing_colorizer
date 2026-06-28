@@ -1,6 +1,6 @@
 {
   "jiTUSryokusyugi": {
-    "team_rating": 1983,
+    "team_rating": 1998,
     "members": [
       "<span class=\"user-blue\">lexi38623</span>",
       "<span class=\"user-blue\">Tehom</span>",
@@ -8,15 +8,15 @@
     ]
   },
   "FastIO_SlowBrain": {
-    "team_rating": 1542,
+    "team_rating": 1539,
     "members": [
       "<span class=\"user-cyan\">sen469</span>",
-      "<span class=\"user-cyan\">YZ_</span>",
+      "<span class=\"user-green\">YZ_</span>",
       "<span class=\"user-cyan\">Nattyu3</span>"
     ]
   },
   "S.F.K.": {
-    "team_rating": 1322,
+    "team_rating": 1329,
     "members": [
       "<span class=\"user-green\">star343</span>",
       "<span class=\"user-green\">NormalSubGroup</span>",
@@ -24,7 +24,7 @@
     ]
   },
   "bogosort": {
-    "team_rating": 2794,
+    "team_rating": 2793,
     "members": [
       "<span class=\"user-orange\">soryuusi0219</span>",
       "<span class=\"user-blue\">jastaway</span>",
@@ -32,7 +32,7 @@
     ]
   },
   "0 Blue 3 Brown": {
-    "team_rating": 753,
+    "team_rating": 778,
     "members": [
       "<span class=\"user-brown\">anima_963</span>",
       "<span class=\"user-brown\">basa_</span>",
@@ -40,7 +40,7 @@
     ]
   },
   "TriCampus": {
-    "team_rating": 720,
+    "team_rating": 738,
     "members": [
       "<span class=\"user-brown\">bridge4432</span>",
       "<span class=\"user-brown\">tyonmage</span>",
@@ -56,7 +56,7 @@
     ]
   },
   "Aobayama_GameOver": {
-    "team_rating": 2051,
+    "team_rating": 2052,
     "members": [
       "<span class=\"user-blue\">E49869826</span>",
       "<span class=\"user-blue\">shikase</span>",
@@ -72,7 +72,7 @@
     ]
   },
   "Golden Kaguya": {
-    "team_rating": 1550,
+    "team_rating": 1564,
     "members": [
       "<span class=\"user-cyan\">circled_9</span>",
       "<span class=\"user-unrated\">Misaizu</span>",
@@ -88,7 +88,7 @@
     ]
   },
   "Murakumo": {
-    "team_rating": 2043,
+    "team_rating": 2045,
     "members": [
       "<span class=\"user-blue\">ZOIZOI</span>",
       "<span class=\"user-blue\">jupiter_68</span>",
@@ -104,7 +104,7 @@
     ]
   },
   "type-r": {
-    "team_rating": 2269,
+    "team_rating": 2271,
     "members": [
       "<span class=\"user-yellow\">hiryuN</span>",
       "<span class=\"user-yellow\">edon8618</span>",
@@ -120,7 +120,7 @@
     ]
   },
   "Aobayama_BlueMountain": {
-    "team_rating": 2138,
+    "team_rating": 2136,
     "members": [
       "<span class=\"user-blue\">ripity</span>",
       "<span class=\"user-yellow\">n_o_n_o_n</span>",
@@ -128,7 +128,7 @@
     ]
   },
   "Aobayama_vitAminC": {
-    "team_rating": 1450,
+    "team_rating": 1495,
     "members": [
       "<span class=\"user-cyan\">raspberry1729</span>",
       "<span class=\"user-green\">Salaadaaa</span>",
@@ -160,7 +160,7 @@
     ]
   },
   "NUralNetwork": {
-    "team_rating": 2186,
+    "team_rating": 2190,
     "members": [
       "<span class=\"user-blue\">syndrome</span>",
       "<span class=\"user-blue\">US_cube</span>",
@@ -168,7 +168,7 @@
     ]
   },
   "NUtrino": {
-    "team_rating": 1880,
+    "team_rating": 1879,
     "members": [
       "<span class=\"user-blue\">downer</span>",
       "<span class=\"user-blue\">Tuchmos</span>",
@@ -176,7 +176,7 @@
     ]
   },
   "KBM": {
-    "team_rating": 1698,
+    "team_rating": 1700,
     "members": [
       "<span class=\"user-cyan\">ma_tw</span>",
       "<span class=\"user-cyan\">yurina256</span>",
@@ -184,10 +184,10 @@
     ]
   },
   "soundscape": {
-    "team_rating": 1821,
+    "team_rating": 1845,
     "members": [
       "<span class=\"user-blue\">iomir</span>",
-      "<span class=\"user-green\">BeforeIrise</span>",
+      "<span class=\"user-cyan\">BeforeIrise</span>",
       "<span class=\"user-green\">Show_541</span>"
     ]
   },
@@ -205,6 +205,14 @@
       "<span class=\"user-blue\">yesantikiss</span>",
       "",
       ""
+    ]
+  },
+  "Mulberry Field": {
+    "team_rating": 1873,
+    "members": [
+      "<span class=\"user-blue\">aotyam</span>",
+      "<span class=\"user-cyan\">Cafe_j19419</span>",
+      "<span class=\"user-brown\">jj1urg</span>"
     ]
   }
 }

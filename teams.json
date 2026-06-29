@@ -1,6 +1,6 @@
 {
   "jiTUSryokusyugi": {
-    "team_rating": 1998,
+    "team_rating": 2006,
     "members": [
       "<span class=\"user-blue\">lexi38623</span>",
       "<span class=\"user-blue\">Tehom</span>",
@@ -8,11 +8,11 @@
     ]
   },
   "FastIO_SlowBrain": {
-    "team_rating": 1539,
+    "team_rating": 1537,
     "members": [
       "<span class=\"user-cyan\">sen469</span>",
       "<span class=\"user-green\">YZ_</span>",
-      "<span class=\"user-cyan\">Nattyu3</span>"
+      "<span class=\"user-green\">Nattyu3</span>"
     ]
   },
   "S.F.K.": {
@@ -24,9 +24,9 @@
     ]
   },
   "bogosort": {
-    "team_rating": 2793,
+    "team_rating": 2833,
     "members": [
-      "<span class=\"user-orange\">soryuusi0219</span>",
+      "<span><img src=\"https://img.atcoder.jp/assets/icon/crown_bronze.png\"/><span class=\"user-red\">soryuusi0219</span></span>",
       "<span class=\"user-blue\">jastaway</span>",
       "<span class=\"user-blue\">tatesoto</span>"
     ]
@@ -72,7 +72,7 @@
     ]
   },
   "Golden Kaguya": {
-    "team_rating": 1564,
+    "team_rating": 1554,
     "members": [
       "<span class=\"user-cyan\">circled_9</span>",
       "<span class=\"user-unrated\">Misaizu</span>",
@@ -80,7 +80,7 @@
     ]
   },
   "Phantasm": {
-    "team_rating": 3180,
+    "team_rating": 3178,
     "members": [
       "<span><img src=\"https://img.atcoder.jp/assets/icon/crown_silver.png\"/><span class=\"user-red\">simasima</span></span>",
       "<span class=\"user-orange\">ponjuice</span>",
@@ -88,7 +88,7 @@
     ]
   },
   "Murakumo": {
-    "team_rating": 2045,
+    "team_rating": 2022,
     "members": [
       "<span class=\"user-blue\">ZOIZOI</span>",
       "<span class=\"user-blue\">jupiter_68</span>",
@@ -104,7 +104,7 @@
     ]
   },
   "type-r": {
-    "team_rating": 2264,
+    "team_rating": 2272,
     "members": [
       "<span class=\"user-yellow\">hiryuN</span>",
       "<span class=\"user-yellow\">edon8618</span>",
@@ -120,7 +120,7 @@
     ]
   },
   "Aobayama_BlueMountain": {
-    "team_rating": 2136,
+    "team_rating": 2132,
     "members": [
       "<span class=\"user-blue\">ripity</span>",
       "<span class=\"user-yellow\">n_o_n_o_n</span>",
@@ -144,7 +144,7 @@
     ]
   },
   "Rinshan Solution": {
-    "team_rating": 3095,
+    "team_rating": 3091,
     "members": [
       "<span><img src=\"https://img.atcoder.jp/assets/icon/crown_bronze.png\"/><span class=\"user-red\">PCTprobability</span></span>",
       "<span class=\"user-orange\">harurun4635</span>",
@@ -152,7 +152,7 @@
     ]
   },
   "zer0shiki": {
-    "team_rating": 2344,
+    "team_rating": 2329,
     "members": [
       "<span class=\"user-yellow\">zer0star</span>",
       "<span class=\"user-yellow\">kenken714</span>",
@@ -168,15 +168,15 @@
     ]
   },
   "NUtrino": {
-    "team_rating": 1879,
+    "team_rating": 1863,
     "members": [
       "<span class=\"user-blue\">downer</span>",
-      "<span class=\"user-blue\">Tuchmos</span>",
+      "<span class=\"user-cyan\">Tuchmos</span>",
       "<span class=\"user-cyan\">luna_moonlight</span>"
     ]
   },
   "KBM": {
-    "team_rating": 1700,
+    "team_rating": 1697,
     "members": [
       "<span class=\"user-cyan\">ma_tw</span>",
       "<span class=\"user-cyan\">yurina256</span>",
@@ -184,7 +184,7 @@
     ]
   },
   "soundscape": {
-    "team_rating": 1845,
+    "team_rating": 1836,
     "members": [
       "<span class=\"user-blue\">iomir</span>",
       "<span class=\"user-cyan\">BeforeIrise</span>",
@@ -208,10 +208,10 @@
     ]
   },
   "Mulberry Field": {
-    "team_rating": 1873,
+    "team_rating": 1854,
     "members": [
       "<span class=\"user-blue\">aotyam</span>",
-      "<span class=\"user-cyan\">Cafe_j19419</span>",
+      "<span class=\"user-blue\">Cafe_j19419</span>",
       "<span class=\"user-brown\">jj1urg</span>"
     ]
   },
@@ -221,6 +221,14 @@
       "<span class=\"user-cyan\">yuuDot</span>",
       "<span class=\"user-green\">Nyanp4su</span>",
       "ZozonTeq"
+    ]
+  },
+  "RGB": {
+    "team_rating": 2273,
+    "members": [
+      "<span class=\"user-yellow\">ryoku_</span>",
+      "<span class=\"user-blue\">wsrtrt</span>",
+      "<span class=\"user-blue\">blueberry1001</span>"
     ]
   }
 }

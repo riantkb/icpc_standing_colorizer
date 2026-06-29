@@ -104,7 +104,7 @@
     ]
   },
   "type-r": {
-    "team_rating": 2271,
+    "team_rating": 2264,
     "members": [
       "<span class=\"user-yellow\">hiryuN</span>",
       "<span class=\"user-yellow\">edon8618</span>",
@@ -192,15 +192,15 @@
     ]
   },
   "polyrhythm": {
-    "team_rating": 2999,
+    "team_rating": 3024,
     "members": [
       "<span><img src=\"https://img.atcoder.jp/assets/icon/crown_bronze.png\"/><span class=\"user-red\">TKTYI</span></span>",
-      "<span class=\"user-orange\">yuma220284</span>",
+      "<span><img src=\"https://img.atcoder.jp/assets/icon/crown_bronze.png\"/><span class=\"user-red\">yuma220284</span></span>",
       "<span class=\"user-yellow\">HoyHoyCharhang</span>"
     ]
   },
   "OECU_Programming_Circle": {
-    "team_rating": 1728,
+    "team_rating": 1705,
     "members": [
       "<span class=\"user-blue\">yesantikiss</span>",
       "",
@@ -213,6 +213,14 @@
       "<span class=\"user-blue\">aotyam</span>",
       "<span class=\"user-cyan\">Cafe_j19419</span>",
       "<span class=\"user-brown\">jj1urg</span>"
+    ]
+  },
+  "HUS Lotus": {
+    "team_rating": 1521,
+    "members": [
+      "<span class=\"user-cyan\">yuuDot</span>",
+      "<span class=\"user-green\">Nyanp4su</span>",
+      "ZozonTeq"
     ]
   }
 }

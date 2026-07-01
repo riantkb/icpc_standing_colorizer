@@ -262,5 +262,21 @@
       "****",
       "****"
     ]
+  },
+  "Chronus": {
+    "team_rating": 2595,
+    "members": [
+      "<span class=\"user-orange\">Rice_tawara459</span>",
+      "<span class=\"user-yellow\">caz37OwO</span>",
+      "<span class=\"user-yellow\">rhoo</span>"
+    ]
+  },
+  "kokuu": {
+    "team_rating": 2370,
+    "members": [
+      "<span class=\"user-yellow\">tassei903</span>",
+      "<span class=\"user-yellow\">cho57020</span>",
+      "<span class=\"user-yellow\">Nzt3</span>"
+    ]
   }
 }

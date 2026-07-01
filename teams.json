@@ -278,5 +278,29 @@
       "<span class=\"user-yellow\">cho57020</span>",
       "<span class=\"user-yellow\">Nzt3</span>"
     ]
+  },
+  "fujiiro_mushikui": {
+    "team_rating": 1931,
+    "members": [
+      "<span class=\"user-blue\">iro_</span>",
+      "<span class=\"user-cyan\">yuta28</span>",
+      "<span class=\"user-blue\">TwoSquirrels</span>"
+    ]
+  },
+  "eieiwo": {
+    "team_rating": 1732,
+    "members": [
+      "<span class=\"user-green\">woody_1227</span>",
+      "<span class=\"user-cyan\">ei2326</span>",
+      "<span class=\"user-cyan\">ei2332</span>"
+    ]
+  },
+  "n0wc0w": {
+    "team_rating": 1437,
+    "members": [
+      "<span class=\"user-cyan\">toufu24</span>",
+      "<span class=\"user-green\">nigs</span>",
+      "<span class=\"user-green\">genchan_omega</span>"
+    ]
   }
 }

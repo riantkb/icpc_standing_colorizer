@@ -318,5 +318,29 @@
       "<span class=\"user-blue\">Caryking</span>",
       "<span class=\"user-blue\">toku4388</span>"
     ]
+  },
+  "yuusaan carry shite": {
+    "team_rating": 2008,
+    "members": [
+      "<span class=\"user-blue\">InTheBloom</span>",
+      "<span class=\"user-unrated\">mid</span>",
+      "<span class=\"user-blue\">yuusaan</span>"
+    ]
+  },
+  "jiTUSryokushugi": {
+    "team_rating": 2006,
+    "members": [
+      "<span class=\"user-blue\">lexi38623</span>",
+      "<span class=\"user-blue\">Tehom</span>",
+      "<span class=\"user-cyan\">Yuulis</span>"
+    ]
+  },
+  "very long queue queueueueueueueue": {
+    "team_rating": 1472,
+    "members": [
+      "<span class=\"user-cyan\">MisumiCoder</span>",
+      "<span class=\"user-cyan\">Lumium</span>",
+      "<span class=\"user-green\">pealsha</span>"
+    ]
   }
 }
